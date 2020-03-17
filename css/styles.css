@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+}
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header {
+	height: 112px;
+	background-color: #fff;
+	padding: 28px;
+}
+
+.logo {
+	width: 250px;
+}
+.menu li {
+	display: inline-block;
+}
+.hero {
+	background: url(../img/herobanner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 930px;
+	display: flex;
+}
