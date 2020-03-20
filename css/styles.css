@@ -3,7 +3,9 @@
 --main-color: #133f6f;
 --highlight: #f0ad1c;
 }
-
+html, body {
+	overflow-x: hidden;
+}
 body {
 	color: var(--main-color)
 }
@@ -298,6 +300,6 @@ footer .rightblock > a:first-child {
 footer a:visited {
 	color: #fff;
 }
-[class*="mob-"] {
+[class*="mob"] {
     display: none !important;
 }
