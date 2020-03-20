@@ -76,14 +76,14 @@ header .wrapper {
 .logo {
 	width: 175px;
 }
-.menu {
+.desk-menu {
 	float: right;
     font-size: 24px;
     display: inline-block;
     margin: 6px 25px 0 0;
 
 }
-.menu li, .menu a:visited {
+.desk-menu li, .desk-menu a:visited {
 	position: relative;
 	font-weight: 900;
 	color: var(--main-color);
@@ -297,4 +297,7 @@ footer .rightblock > a:first-child {
 }
 footer a:visited {
 	color: #fff;
+}
+[class*="mob-"] {
+    display: none !important;
 }
