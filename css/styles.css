@@ -85,18 +85,20 @@ header .wrapper {
     margin: 6px 25px 0 0;
 
 }
-.desk-menu li, .desk-menu a:visited {
+.desk-menu li  {
 	position: relative;
 	font-weight: 900;
-	color: var(--main-color);
+
 	font-size: 23px;
 	display: inline-block;
 	padding-right: 10px;
 	height: 56px;
 	
+	
 }
-.active a {
-
+.desk-menu a, .desk-menu a:visited {color: var(--main-color); transition: 0.5s color; }
+.desk-menu a:hover {
+	color: #005abb;
 }
 .active a:after {
 	content: '';
@@ -186,6 +188,8 @@ body > section:nth-child(5) > .iconsection {
     height: auto;
     left: 62%;
     top: -138px;
+    display: block;
+    background: url(./img/icons/connector.png);
 }
 
 .iconsection .iconbox:nth-child(2) > img.connector {
@@ -267,7 +271,7 @@ footer {
     background: var(--main-color);
     color: #fff;
     height: 210px;
-    padding: 70px 0;
+    padding: 70px 20px;
 }
 .leftblock {
 	position: absolute;
