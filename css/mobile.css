@@ -279,6 +279,9 @@
 .iconsection.leaders .iconbox {
 	padding: 0;
 }
+.iconsection.leaders .iconbox  span:nth-child(2) {
+	color: #0074be;
+}
 .iconsection.leaders .iconbox p {
     display: block;
     margin-bottom: 10px;
