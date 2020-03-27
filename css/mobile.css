@@ -164,7 +164,7 @@
 
 	}
 	.iconbox {
-		width: 100% !important;
+		width: 100% ;
 		margin-top: 70px;
 		margin-bottom: 0;
 	}
@@ -257,15 +257,32 @@
     text-align: left;
 
 }
+.iconsection.dark .iconbox {
+	width: 50% !important;
+}
+.iconsection.dark .iconbox span {
+	font-weight: 600;
+	max-width: 150px;
+}
+.iconsection.dark .iconbox:nth-child(7) {
+	width: 100% !important;
+}
+.iconsection.leaders {
+    text-align: center;
+    padding: 70px 0px;
+}
 .iconsection.leaders h2 {
     position: relative;
     text-align: center;
     width: 100%;
 }
+.iconsection.leaders .iconbox {
+	padding: 0;
+}
 .iconsection.leaders .iconbox p {
     display: block;
     margin-bottom: 10px;
-    text-align: left;
+    padding: 0 15px;
 }
 .about .halfblock form {
 	margin: auto;
