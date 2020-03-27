@@ -1,4 +1,4 @@
-@media all and (max-width: 1170px) {
+@media all and (max-width: 1150px) {
 		[class*="desk"] {
 	    display: none !important;
 	}
@@ -15,6 +15,7 @@
 	}
 	/* Menu Icon */
 	.menu-icon {
+		display: flex;
 	    font-size: 1.3em;
 	    width: 48px;
 	    height: 48px;
@@ -31,13 +32,17 @@
 	    margin: 0 auto;
 		box-shadow: 0px 1px 10px 1px rgba(0, 61, 113, 0.25);	
 	}
+	.menu-icon svg {
+		margin: auto;
+		width: 21px;
+	}
 	/* class for the ul*/
 	.menu-close {
 	    transform: rotate(45deg);
 	    font-family: monospace;
 	    display: none;
 	    z-index: 20;
-	    font-size: 42px;
+	    font-size: 48px;
 	    width: 48px;
 	    height: 48px;
 	    text-align: center;
@@ -159,7 +164,7 @@
 
 	}
 	.iconbox {
-		width: 100%;
+		width: 100% !important;
 		margin-top: 70px;
 		margin-bottom: 0;
 	}
@@ -184,11 +189,15 @@
 		height: unset;
 		width: unset;
 	}
-
+	.hero {
+		    background: linear-gradient(45deg, #00000040, #00000040), url(../img/herobanner.jpg) center;
+			background-size: cover;
+		}
 	.hero h1{
 		font-size: 28px;
 	}
 	.hero {height: 100vh;
+		padding: 155px 0 70px;
 	}
 
 	body > section:nth-child(5) > .iconsection {
@@ -213,7 +222,7 @@
 		height: 100vh;
 	}
 	.halfblock form {
-		width: 100%;
+		width: 100% !important;
 		color: #fff;
 	}
 	.halfblock .button, .halfblock form .email {
@@ -237,12 +246,60 @@
 		margin: 0px;
 		font-size: 14px;
 	}
-/*	footer .social {
-		position: absolute;
-	    margin-top: 20px;
-	    right: 90%;
-	    margin-top: 35px;
-	    width: 100vw;
-	}*/
+
+
+/*ABOUT==============================*/
+.about .hero {display: block;}
+.about .hero .about_text {
+    color: #fff;
+    margin: auto 0;
+    width: 100%;
+    text-align: left;
+
+}
+.iconsection.leaders h2 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.iconsection.leaders .iconbox p {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.about .halfblock form {
+	margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.halfblock {
+    height: 100vh;
+    background: linear-gradient( 0deg, #003d71e8, #003d71e8), url(../img/team.jpg) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.infographic > .wrapper {
+    height: calc(100vh - 85px);
+    background: url(../img/infograph_desk.png) no-repeat;
+    background-size: auto 90%;
+    overflow-x: scroll;
+    animation: bgswitch 10s infinite alternate cubic-bezier(0.36, 0.01, 0.74, 1);;
+}
+@keyframes bgswitch {
+	0%{background-position: left;}
+	100%{background-position: right;}
+
+}
+.infographic > .wrapper.click {
+
+}
+.infographic > .wrapper img {
+    transform: translate(0px, 0px);
+    height: 86%;
+    margin-top: 7%;
+
+}
+
 
 }

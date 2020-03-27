@@ -1,0 +1,908 @@
+<meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
+<script>
+        var monthNames = new Array("Januar", "February", "März", "April", "Kann", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember");
+        var now = new Date();
+        now.setDate(now.getDate() + 1);
+        var nowStringTommorow = monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+  </script>
+<style type="text/css">
+* {
+		box-sizing: border-box;
+	}
+	body, p {
+		margin: 0;
+		padding: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+	hr {border-color: rgba(151, 151, 151, 0.12);}
+
+	.wrapper {
+
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+		background: #fff;
+		line-height: 1.3;
+		overflow: hidden;
+	}
+
+	.wrapper > .header .logo { 
+		padding: 15px 10px;
+	}
+	.wrapper > .header .title {
+		font-weight: 500;
+		font-size: 40px;
+		color: #fff;
+		background: #0086f8;
+		padding: 20px 50px;
+	}
+	.main {
+	background: #e6e6e6;
+		padding: 10px 5px;
+	}
+		.counter:before {content: "12"; animation: count 35s;}
+	@keyframes count {
+0% {content: "2"}
+10% {content: "3"}
+15% {content: "4"}
+25% {content: "5"}
+50% {content: "6"}
+75% {content: "7"}
+80% {content: "9"}
+100% {content: "11"}}
+	.roundimg {
+    width: 150px;
+    border-radius: 100px;}
+    .prize{width:100%}
+    .pbox{background-color:#fff;box-shadow:0 0 2px 2px #e9e9e9;padding:10px 6px;position:relative; display: flex;}
+    .pbox img{width: 150px;;margin-right:30px}
+    .pbox h2,.pbox p{margin:6px 6px 0}
+    .pbox h2{font-size:xlarge;text-align:left}
+    .pbox p{font-size:16px;text-align:left;
+    margin-left: 20px;}
+    .footer p,.prizebtn{display:inline-block}
+    .prizebtn{border: 0 solid #334c83;
+    padding: 4px 0;
+    /* width: 80%; */
+    margin: 8px 4px 4px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 20px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #0071e3;
+    text-decoration: none;
+    -webkit-animation: pulse 1.5s infinite;
+    margin-left: 20px;
+}
+
+    .prizebtn:visited{ color: #fff; }
+    .prize h3{font-size:24px;padding:5px 0;text-align:center}.prize h2{font-size:18px;text-align:left;
+    margin-left: 20px;}
+    .reviews{width:100%;padding:0;line-height:1.5}
+
+.reviews .name{ font-weight: 700; font-size: 15px;
+    color: #1a39c5;}
+  .reviews .text{   color: #4a4a4a;
+    margin: 10px 0px;
+  font-size: 14px;
+}
+    .reviews .date2{padding-bottom: 6px;
+    color: #a2a2a2;
+    font-size: 12px;}
+    .reviews table{padding:5px 0;font-size:14px}
+    .reviews h2{color:grey;font-size:16px;font-weight:300;padding:20px 0 5px}
+
+
+    .commentpad{padding-left:10px}
+    .reviews span{color:#a5778f}
+    .footer{    
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    color: #777;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;height: 90px;
+    width: 100%;}
+    .footer p{padding-right:20px}
+	.fbimg{background-color:#f2f2f2;border-radius:2px;max-width:610px;width:100%;padding:3px;box-sizing:border-box;border:1px solid grey;margin:10px 0 5px}
+	.main .box {
+		background: #fff;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+	}
+	.logo img {width: 25px;}
+	.main .box2 {
+		
+
+	}
+	.main .box .header {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 10px;
+	}
+	.box .header .logo {
+		margin-right: 10px;
+	
+
+	}
+	.main .box .header .wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.box .header .wrap .title {
+		color: #3c4043;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0086f8;
+	}
+	.box .header .wrap .date2 {
+		font-size: 24px;
+		font-weight: 500;
+	}
+	.box .content > span {
+		display: block;
+		font-size: 14px;
+		color: #3c4043;
+		margin-bottom: 5px;
+
+	}
+	.box .content .line {
+			border-bottom: 2px solid #0086f861;
+		line-height: .1;
+	}
+	.mark {
+		font-weight: bold;
+		color: #0086f8;
+	}
+	.question > * {
+		display: block;
+		text-align: center;
+	}
+	.question button,
+	#subComment {
+		background: none; 
+		border: none;
+		width: 100%;
+		border-radius: 10px;
+		background-color: #0086f8;
+		box-shadow: 3px 4px 1px 0px rgb( 0, 0, 0);
+		height: 100px;
+		margin-bottom: 30px;
+		color: #fff;
+		font-size: 36px;
+		font-weight: bold;
+	}
+	#subComment {
+		width: 65%;
+		margin-right: auto;
+    	margin-left: auto;
+    	display: block;
+	}
+	.prize-holder-box{
+		padding: 10px;
+
+	}
+	span.question {
+		font-size: 19px;
+		font-weight: bold;
+margin: 10px 0px 20px 0px;
+		color: #0086f8;	
+	}
+	.validate,
+	.prizes, #v1c, #v2c, #v3c,
+	#v1b, #v2b, #v3b, #vfinal {
+		display: none;
+	}
+	.validate {
+		position: relative;
+	}
+	.wrapSzazalek {
+		position: absolute;
+    	top: 0;
+    	right: 0;
+    	font-size: 18px;
+	}
+	#szlider {
+		height: 40px;
+		margin-bottom: 50px;
+	}
+	#szliderbar {
+		background: #0086f8;
+	}
+	.validate .text {
+		margin-bottom: 25px;
+		font-size: 15px;
+	}
+	.list {
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+	}
+	.list .img img {
+		width: 13px;
+	}
+	.list .img {
+		width: 40px;	
+	}
+	.list .text {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.check {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	.box3 img {
+		width: 100%;
+	}
+	.prizes .title {
+		font-size: 16px;
+		font-weight: bold;
+		color: #0086f8;
+		display: block;
+		text-align: center;
+	}
+	.box.prize3 {
+		position: relative;
+	}
+	.next {
+		position: absolute;
+    	right: 110px;
+    	bottom: -10px;
+	}
+
+	#popUp {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: rgba(1,1,1,.7);
+		padding-top: 60px;
+		z-index: 20;
+	}
+	#mainBox {
+		width: 90%;
+		border: 1px solid #000;
+		border-radius: 15px;
+		background: #fff;
+		padding: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		height: min-content;
+		padding-bottom: 60px;
+		position: relative;
+	}
+	#popUp #mainBox > * {
+		display: block;
+		margin-bottom: 17px;
+	}
+	#popUp .date {
+		font-size: 24px;
+	}
+	#popUp .title {
+		color: #3c4043;
+		font-size: 17px;
+		font-weight: 400;
+	}
+	#popUp #mainBox .text {
+		font-size: 14px;
+		font-weight: 400;
+		margin-bottom: 60px;
+	}
+	.blueline { color: #fff; padding: 8px; font-weight: 600; background: #0086f8; font-size: 22px;  }
+	.logoPop {
+		width: 50px;
+		right: 30px;
+		top: 30px;
+		float: right;
+	}
+	#popUp .close {
+		position: absolute;
+		right: 30px;
+		
+		font-size: 24px;
+		border-radius: 10px;
+		padding: 5px 15px;
+		color: #fff;
+		background: #337ab7;
+	}
+
+.percentages {
+    border: 1px solid #fbbe06;
+    border-radius: 2px;
+    display: none;
+}
+.percentages .percent {
+    background: #fbbe06;
+    font-size: 12px;
+}
+.percent1 {
+    width: 8%;
+}
+.percent2 {
+    width: 11%;
+}
+.percent3 {
+    width: 81%;
+}
+.percent4 {
+    width: 64%;
+}
+.percent5 {
+    width: 28%;
+}
+.percent6 {
+    width: 9%;
+}
+.percent7 {
+    width: 89%;
+}
+.percent8 {
+    width: 9%;
+}
+.percent9 {
+    width: 2%;
+}
+.percent10 {
+    width: 18%;
+}
+.percent11 {
+    width: 69%;
+}
+.percent12 {
+    width: 13%;
+}
+.answer {
+    border: 0 solid #3079ed;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 100%;
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 3px;
+    background: url(data:image/svg+xml;
+    base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRkOTBmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0Nzg3ZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #4d90fe 0, #4787ed 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4d90fe), color-stop(100%, #4787ed));
+    background: -webkit-linear-gradient(top, #4d90fe 0, #4787ed 100%);
+    background: -o-linear-gradient(top, #4d90fe 0, #4787ed 100%);
+    background: -ms-linear-gradient(top, #4d90fe 0, #4787ed 100%);
+    background: linear-gradient(to bottom, #4d90fe 0, #4787ed 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#4d90fe',  endColorstr='#4787ed',  GradientType=0);
+}
+@-webkit-keyframes pulse {
+  0% {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  70% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+  }
+  100% {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }</style>
+<div class="wrapper">
+	<div id="popUp">
+		<div id="mainBox">
+			<img alt="" class="logoPop" src="http://img.mobilenobo.net/WILJ96rgf7cgk5z.png" /> <font style="color:#636465;font-size:24px;"> <script>
+                             var mydate=new Date()
+                            mydate.setDate(mydate.getDate()-0);
+                            var year=mydate.getYear()
+                            if (year < 1000)
+                            year+=1900
+                            var day=mydate.getDay()
+                            var month=mydate.getMonth()
+                            var daym=mydate.getDate()
+                            if (daym<10)
+                            daym="0"+daym
+                            var dayarray=new Array("Κυριακή", "Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή", "Σάββατο")
+                            var montharray=new Array("Ιανουάριος", "Φεβρουάριος", "Μάρτιος", "Απρίλιος", "Μάιο", "Ιούνιος", "Ιούλιο", "Αύγουστος", "Σεπτέμβριο", "Οκτώβριο", "Νοέμβριος", "Δεκέμβριος")
+                            document.write(""+montharray[month]+" "+daym+"")
+              </script>&nbsp;2020</font> <span class="title">&Sigma;&upsilon;&gamma;&chi;&alpha;&rho;&eta;&tau;ή&rho;&iota;&alpha;! [[FirstName]]!</span> <span class="text">Έ&chi;&epsilon;&tau;&epsilon; &epsilon;&pi;&iota;&lambda;&epsilon;&gamma;&epsilon;ί &alpha;&pi;ό &tau;&eta;&nu; Google! &Epsilon;ί&sigma;&tau;&epsilon; έ&nu;&alpha;&sigmaf; &epsilon;&kappa; &tau;&omega;&nu; &tau;&upsilon;&chi;&epsilon;&rho;ώ&nu; &pi;&omicron;&upsilon; &mu;&pi;&omicron;&rho;&epsilon;ί &nu;&alpha; &kappa;&epsilon;&rho;&delta;ί&sigma;&epsilon;&iota; έ&nu;&alpha; iPhone!<br />
+			<br />
+			&Tau;&omicron; &alpha;&pi;&omicron;&kappa;&lambda;&epsilon;&iota;&sigma;&tau;&iota;&kappa;ό &alpha;&upsilon;&tau;ό &delta;ώ&rho;&omicron; &alpha;&pi;&epsilon;&upsilon;&theta;ύ&nu;&epsilon;&tau;&alpha;&iota; &sigma;&epsilon; &pi;&iota;&sigma;&tau;&omicron;ύ&sigmaf; &sigma;&upsilon;&nu;&delta;&rho;&omicron;&mu;&eta;&tau;έ&sigmaf; &mu;&alpha;&sigmaf; &sigma;&tau;&eta;&nu; &Epsilon;&lambda;&lambda;ά&delta;&alpha;.<br />
+			<br />
+			&Epsilon;&pi;&iota;&beta;&epsilon;&beta;&alpha;&iota;ώ&sigma;&tau;&epsilon; ό&tau;&iota; &epsilon;ί&sigma;&tau;&epsilon; &omicron; &kappa;ά&tau;&omicron;&chi;&omicron;&sigmaf; &alpha;&upsilon;&tau;&omicron;ύ &tau;&omicron;&upsilon; &tau;&eta;&lambda;&epsilon;&phi;ώ&nu;&omicron;&upsilon; &kappa;ά&nu;&omicron;&nu;&tau;&alpha;&sigmaf; &kappa;&lambda;&iota;&kappa; &sigma;&tau;&omicron; OK </span><br />
+			<img alt="" src="http://img.mobilenobo.net/VzLdyTudgMF2B6X.png" /><button class="close" type="button">OK</button></div>
+	</div>
+	<div class="header" style="border-bottom: 1px solid rgba(151,151,151,0.5);">
+		<div class="logo">
+			<img src="http://img.mobilenobo.net/2YT1oBNv4yTWWO8.png" style="width: 115px;" /></div>
+		<div class="blueline">
+			<span style="vertical-align: bottom;
+
+  ">&Alpha;&nu;&tau;&alpha;&mu;&omicron;&iota;&beta;έ&sigmaf; &sigma;&upsilon;&nu;&delta;&rho;&omicron;&mu;&eta;&tau;ώ&nu; &tau;&eta;&sigmaf; Google</span></div>
+	</div>
+	<div class="main">
+		<div class="box box1">
+			<div class="header">
+				<div class="logo">
+					<img alt="" src="http://img.vodonet.net/loJtcPNclUIjH1q.png" /></div>
+				<div class="wrap">
+					<span class="title">&Sigma;&upsilon;&gamma;&chi;&alpha;&rho;&eta;&tau;ή&rho;&iota;&alpha; [[FirstName]]! &Tau;&omicron; &tau;&eta;&lambda;έ&phi;&omega;&nu;ό &sigma;&alpha;&sigmaf; &kappa;έ&rho;&delta;&iota;&sigma;&epsilon; (1) Google-&delta;ώ&rho;&omicron;! </span> <font style="color:#9fa2a6;font-size:14px;"> <script>
+                             var mydate=new Date()
+                            mydate.setDate(mydate.getDate()-0);
+                            var year=mydate.getYear()
+                            if (year < 1000)
+                            year+=1900
+                            var day=mydate.getDay()
+                            var month=mydate.getMonth()
+                            var daym=mydate.getDate()
+                            if (daym<10)
+                            daym="0"+daym
+                            var dayarray=new Array("Κυριακή", "Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή", "Σάββατο")
+                            var montharray=new Array("Ιανουάριος", "Φεβρουάριος", "Μάρτιος", "Απρίλιος", "Μάιο", "Ιούνιος", "Ιούλιο", "Αύγουστος", "Σεπτέμβριο", "Οκτώβριο", "Νοέμβριος", "Δεκέμβριος")
+                            document.write(""+montharray[month]+" "+daym+"")
+              </script>&nbsp; 2020</font></div>
+			</div>
+			<div class="content">
+				<span>&Kappa;ά&theta;&epsilon;<script>document.write(dayarray[mydate.getDay()]);</script>&nbsp; &epsilon;&pi;&iota;&lambda;έ&gamma;&omicron;&upsilon;&mu;&epsilon; &tau;&upsilon;&chi;&alpha;ί&alpha; 10 &tau;&upsilon;&chi;&epsilon;&rho;&omicron;ύ&sigmaf; &chi;&rho;ή&sigma;&tau;&epsilon;&sigmaf; &tau;&eta;&sigmaf; Google &sigma;&tau;&omicron;&upsilon;&sigmaf; &omicron;&pi;&omicron;ί&omicron;&upsilon;&sigmaf; &delta;ί&nu;&omicron;&upsilon;&mu;&epsilon; έ&nu;&alpha; &delta;ώ&rho;&omicron; &tau;&eta;&sigmaf; Apple <strong>(&Tau;&Omicron; Έ&Pi;&Alpha;&Theta;&Lambda;&Omicron; &Epsilon;Ί&Nu;&Alpha;&Iota; &Epsilon;&Gamma;&Gamma;&Upsilon;&Eta;&Mu;Έ&Nu;&Omicron;!)</strong> &alpha;&pi;ό &tau;&omicron;&upsilon;&sigmaf; &chi;&omicron;&rho;&eta;&gamma;&omicron;ύ&sigmaf; &mu;&alpha;&sigmaf;.<br />
+				<br />
+				&Tau;&omicron; &delta;&omega;&rho;&epsilon;ά&nu; <strong>&alpha;&upsilon;&tau;ό &delta;ώ&rho;&omicron; </strong> &pi;&rho;&omicron;&omicron;&rho;ί&zeta;&epsilon;&tau;&alpha;&iota; &alpha;&pi;&omicron;&kappa;&lambda;&epsilon;&iota;&sigma;&tau;&iota;&kappa;ά &kappa;&alpha;&iota; &Mu;&Omicron;&Nu;&Omicron; &sigma;&epsilon; &chi;&rho;ή&sigma;&tau;&epsilon;&sigmaf; &tau;&eta;&sigmaf; Google &sigma;&tau;&omicron; &Epsilon;&lambda;&lambda;ά&delta;&alpha;! &Alpha;&upsilon;&tau;ό&sigmaf; &epsilon;ί&nu;&alpha;&iota; &omicron; &delta;&iota;&kappa;ό&sigmaf; &mu;&alpha;&sigmaf; &tau;&rho;ό&pi;&omicron;&sigmaf; &gamma;&iota;&alpha; &nu;&alpha; &sigma;&alpha;&sigmaf; &epsilon;&upsilon;&chi;&alpha;&rho;&iota;&sigma;&tau;ή&sigma;&omicron;&upsilon;&mu;&epsilon; &gamma;&iota;&alpha; &tau;&eta; &delta;&iota;&alpha;&rho;&kappa;ή &pi;ί&sigma;&tau;&eta; &sigma;&alpha;&sigmaf; &sigma;&tau;&alpha; &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &kappa;&alpha;&iota; &tau;&iota;&sigmaf; &upsilon;&pi;&eta;&rho;&epsilon;&sigma;ί&epsilon;&sigmaf; &mu;&alpha;&sigmaf;.</span> <span><span style="color:#f80000"><b>&Kappa;&Iota;&Nu;&Eta;&Theta;&Epsilon;&Iota;&Tau;&Epsilon; &Alpha;&Mu;&Epsilon;&Sigma;&Alpha;!</b></span> &Epsilon;&Chi;&Omicron;&Upsilon;&Nu; &Alpha;&Pi;&Omicron;&Mu;&Epsilon;&Iota;&Nu;&Epsilon;&Iota; &Mu;&Omicron;&Nu;&Omicron; (5) &Epsilon;&Pi;&Alpha;&Theta;&Lambda;&Alpha; &Gamma;&Iota;&Alpha; &Nu;&Alpha; &Kappa;&Epsilon;&Rho;&Delta;&Iota;&Sigma;&Epsilon;&Tau;&Epsilon;!</span> <span class="line">&nbsp;</span> <span>Έ&chi;&epsilon;&tau;&epsilon; <span class="mark" id="timer"> 3 &Lambda;&epsilon;&pi;&tau;ά 54 &delta;&epsilon;&upsilon;&tau;&epsilon;&rho;&omicron;&lambda;έ&pi;&tau;&omega;&nu; </span> &Alpha;&pi;&alpha;&nu;&tau;ή&sigma;&tau;&epsilon; &sigma;&tau;&iota;&sigmaf; &epsilon;&rho;&omega;&tau;ή&sigma;&epsilon;&iota;&sigmaf; &pi;&rho;&iota;&nu; &kappa;ά&pi;&omicron;&iota;&omicron;&sigmaf; ά&lambda;&lambda;&omicron;&sigmaf; &pi;ά&rho;&epsilon;&iota; &tau;&eta; &theta;έ&sigma;&eta; &sigma;&alpha;&sigmaf;. &Kappa;&alpha;&lambda;ή &tau;ύ&chi;&eta;!</span></div>
+		</div>
+		<div class="box box2">
+			<div class="question question1">
+				<span class="question">&Epsilon;&rho;ώ&tau;&eta;&sigma;&eta; 1/4: &Pi;&omicron;&iota;&omicron;&sigmaf; &epsilon;ί&nu;&alpha;&iota; &omicron; &iota;&delta;&rho;&upsilon;&tau;ή&sigmaf; &tau;&eta;&sigmaf; Google? </span> <span class="answer">&Mu;&pi;&iota;&lambda; &Gamma;&kappa;έ&iota;&tau;&sigmaf; </span>
+				<div class="percentages">
+					<div class="percent percent1">
+						<span>8%</span></div>
+				</div>
+				<span class="answer">&Mu;&alpha;&rho;&kappa; &Zeta;&omicron;ύ&kappa;&epsilon;&rho;&mu;&pi;&epsilon;&rho;&gamma;&kappa;</span>
+				<div class="percentages">
+					<div class="percent percent2">
+						<span>11%</span></div>
+				</div>
+				<span class="answer">&Lambda;ά&rho;&rho;&upsilon; &Pi;έ&iota;&tau;&zeta;</span>
+				<div class="percentages">
+					<div class="percent percent3">
+						<span>81%</span></div>
+				</div>
+			</div>
+			<div class="question question2" style="display: none;">
+				<span class="question">&Epsilon;&rho;ώ&tau;&eta;&sigma;&eta; 2/4: &Pi;ό&tau;&epsilon; &iota;&delta;&rho;ύ&theta;&eta;&kappa;&epsilon; &eta; Google?</span> <span class="answer">1998</span>
+				<div class="percentages">
+					<div class="percent percent4">
+						<span>87%</span></div>
+				</div>
+				<span class="answer">2015</span>
+				<div class="percentages">
+					<div class="percent percent5">
+						<span>8%</span></div>
+				</div>
+				<span class="answer">2017</span>
+				<div class="percentages">
+					<div class="percent percent6">
+						<span>5%</span></div>
+				</div>
+			</div>
+			<div class="question question3" style="display: none;">
+				<span class="question">&Epsilon;&rho;ώ&tau;&eta;&sigma;&eta; 3/4: &Pi;&omicron;ύ &beta;&rho;ί&sigma;&kappa;&epsilon;&tau;&alpha;&iota; &eta; &epsilon;&pi;&iota;&chi;&epsilon;&iota;&rho;&eta;&sigma;&iota;&alpha;&kappa;ή έ&delta;&rho;&alpha; &tau;&eta;&sigmaf; Google?</span> <span class="answer">&Eta;&Pi;&Alpha;</span>
+				<div class="percentages">
+					<div class="percent percent7">
+						<span>89%</span></div>
+				</div>
+				<span class="answer">&Alpha;&gamma;&gamma;&lambda;ί&alpha;</span>
+				<div class="percentages">
+					<div class="percent percent8">
+						<span>9%</span></div>
+				</div>
+				<span class="answer">&Rho;&omega;&sigma;ί&alpha;</span>
+				<div class="percentages">
+					<div class="percent percent9">
+						<span>2%</span></div>
+				</div>
+			</div>
+			<div class="question question4" style="display: none;">
+				<span class="question">&Epsilon;&rho;ώ&tau;&eta;&sigma;&eta; 4/4: &Pi;&omicron;&iota;&alpha; &alpha;&pi;ό &tau;&iota;&sigmaf; &pi;&alpha;&rho;&alpha;&kappa;ά&tau;&omega; &upsilon;&pi;&eta;&rho;&epsilon;&sigma;ί&epsilon;&sigmaf; &alpha;&nu;ή&kappa;&epsilon;&iota; &sigma;&tau;&eta;&nu; Google?</span> <span class="answer">Youtube</span>
+				<div class="percentages">
+					<div class="percent percent7">
+						<span>89%</span></div>
+				</div>
+				<span class="answer">Facebook</span>
+				<div class="percentages">
+					<div class="percent percent8">
+						<span>9%</span></div>
+				</div>
+				<span class="answer">Twitter</span>
+				<div class="percentages">
+					<div class="percent percent9">
+						<span>2%</span></div>
+				</div>
+			</div>
+			<div class="validate">
+				<div class="text">
+					<p id="v1b">
+						&Epsilon;&pi;&iota;&kappa;ύ&rho;&omega;&sigma;&eta; &tau;&eta;&sigmaf; &alpha;&pi;ά&nu;&tau;&eta;&sigma;ή&sigmaf; &sigma;&alpha;&sigmaf;</p>
+					<p id="v2b">
+						<br />
+						Έ&lambda;&epsilon;&gamma;&chi;&omicron;&sigmaf; &tau;&omicron;&upsilon; IP &sigma;&alpha;&sigmaf; ...</p>
+					<p id="v3b">
+						<br />
+						Έ&lambda;&epsilon;&gamma;&chi;&omicron;&sigmaf; &alpha;&pi;&omicron;&theta;έ&mu;&alpha;&tau;&omicron;&sigmaf; &delta;ώ&rho;&omega;&nu; ...</p>
+					<p id="vfinal">
+						<span style="color: #0086f8; font-size: 15px; ">&Sigma;&Upsilon;&Gamma;&Chi;&Alpha;&Rho;&Eta;&Tau;&Eta;&Rho;&Iota;&Alpha;!</span></p>
+				</div>
+				<div class="wrapSzazalek">
+					<span id="szazalek">0%</span></div>
+				<div class="wrapSzlider">
+					<div id="szlider">
+						<div id="szliderbar">
+							&nbsp;</div>
+						<div id="szazalek">
+							&nbsp;</div>
+					</div>
+				</div>
+				<div class="list">
+					<div class="check check1">
+						<div class="img img1">
+							<img id="v1a" src="http://img.mobilenobo.net/D4mGVO0BmnsEq24.gif" /> <img id="v1c" src="http://img.mobilenobo.net/lyRq3HCrDOYjDlj.png" /></div>
+						<div class="text text1">
+							<span>&Alpha;&pi;&alpha;&nu;&tau;ή&sigma;&alpha;&tau;&epsilon; &sigma;&epsilon; ό&lambda;&alpha; (4/4) &sigma;&omega;&sigma;&tau;ά!</span></div>
+					</div>
+					<div class="check check2">
+						<div class="img img2">
+							<img id="v2a" src="http://img.mobilenobo.net/D4mGVO0BmnsEq24.gif" /> <img id="v2c" src="http://img.mobilenobo.net/lyRq3HCrDOYjDlj.png" /></div>
+						<div class="text text2">
+							<span>&Delta;&epsilon;&nu; &upsilon;&pi;ά&rho;&chi;&omicron;&upsilon;&nu; &pi;&rho;&omicron;&eta;&gamma;&omicron;ύ&mu;&epsilon;&nu;&epsilon;&sigmaf; &kappa;&alpha;&tau;&alpha;&chi;&omega;&rho;ή&sigma;&epsilon;&iota;&sigmaf; &gamma;&iota;&alpha; &alpha;&upsilon;&tau;ό &tau;&omicron; IP.</span></div>
+					</div>
+					<div class="check check3">
+						<div class="img img3">
+							<img id="v3a" src="http://img.mobilenobo.net/D4mGVO0BmnsEq24.gif" /> <img id="v3c" src="http://img.mobilenobo.net/lyRq3HCrDOYjDlj.png" /></div>
+						<div class="text text3">
+							<span>&Upsilon;&pi;ά&rho;&chi;&omicron;&upsilon;&nu; &delta;&iota;&alpha;&theta;έ&sigma;&iota;&mu;&alpha; &beta;&rho;&alpha;&beta;&epsilon;ί&alpha;!</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="prizes">
+				<div class="box">
+					<div class="prize wrapper" id="v4">
+						<h3>
+							&Alpha;&pi;ό&kappa;&tau;&eta;&sigma;&epsilon; &tau;&omicron; iPhone &pi;&omicron;&upsilon; &sigma;&omicron;&upsilon; &tau;&alpha;&iota;&rho;&iota;ά&zeta;&epsilon;&iota;:</h3>
+						<table border="0" width="100%">
+							<tbody>
+								<tr class="pbox wrapper" style="opacity:0.5;">
+									<td width="40%">
+										<div onclick="exit_b1();PreventExitPop = false" style="cursor:pointer;">
+											<img src="http://img.mobilenobo.net/jx5tDPmEDOSYCOo.jpg" /></div>
+									</td>
+									<td class="prize-holder-box" width="60%">
+										<div onclick="exit_b1();PreventExitPop = false" style="cursor:pointer;">
+											<h2 style="color:#4485f6;">
+												iPhone 11 256GB</h2>
+										</div>
+										<p>
+											<b>&Tau;&iota;&mu;ή &kappa;&alpha;&tau;&alpha;&lambda;ό&gamma;&omicron;&upsilon;:<br />
+											&euro; 1 059.00</b><br />
+											<b>&Eta; &tau;&iota;&mu;ή &sigma;&alpha;&sigmaf;:</b>&euro;0<br />
+											<b>&Alpha;&pi;&omicron;&mu;έ&nu;&omicron;&upsilon;&nu;: </b>0 &alpha;&pi;έ&mu;&epsilon;&iota;&nu;&alpha;&nu;</p>
+										<div onclick="exit_b1();PreventExitPop = false" style="cursor:pointer;">
+											<div class="prizebtn btnwrapper" style="background-color:#aaa; -webkit-animation: none">
+												&Mu;&Eta; &Delta;&Iota;&Alpha;&Theta;&Epsilon;&Sigma;&Iota;&Mu;&Omicron;&Sigma;</div>
+										</div>
+									</td>
+								</tr>
+								<tr height="10px">
+								</tr>
+								<tr class="pbox wrapper" style="opacity:0.5;">
+									<td width="40%">
+										<div onclick="exit_b1();PreventExitPop = false" style="cursor:pointer;">
+											<img src="http://img.mobilenobo.net/fTnZoBFbnHagxjr.jpg" /></div>
+									</td>
+									<td class="prize-holder-box" width="60%">
+										<div onclick="exit_b1();PreventExitPop = false" style="cursor:pointer;">
+											<h2 style="color:#4485f6;">
+												iPhone 11 Pro 256GB</h2>
+										</div>
+										<p>
+											<b>&Tau;&iota;&mu;ή &kappa;&alpha;&tau;&alpha;&lambda;ό&gamma;&omicron;&upsilon;:<br />
+											&euro;1 429.00</b><br />
+											<b>&Eta; &tau;&iota;&mu;ή &sigma;&alpha;&sigmaf;: </b>&euro;0<br />
+											<b>&Alpha;&pi;&omicron;&mu;έ&nu;&omicron;&upsilon;&nu;: </b>0 &alpha;&pi;έ&mu;&epsilon;&iota;&nu;&alpha;&nu;</p>
+										<div onclick="exit_b1();PreventExitPop = false" style="cursor:pointer;">
+											<div class="prizebtn btnwrapper" style="background-color:#aaa; -webkit-animation: none">
+												&Mu;&Eta; &Delta;&Iota;&Alpha;&Theta;&Epsilon;&Sigma;&Iota;&Mu;&Omicron;&Sigma;</div>
+										</div>
+									</td>
+								</tr>
+								<tr height="10px">
+								</tr>
+								<tr class="pbox wrapper">
+									<td width="40%">
+										<a href="[[link]]" rel="noreferrer"><img src="http://img.mobilenobo.net/pkQUoC6Cj4QcUY8.jpg" /> </a></td>
+									<td class="prize-holder-box" width="60%">
+										<h2>
+											<a href="[[link]]" rel="noreferrer" style="text-decoration: none; color: #0071e3;">iPhone 11 Pro Max 256GB</a></h2>
+										<p>
+											<b>&Tau;&iota;&mu;ή &kappa;&alpha;&tau;&alpha;&lambda;ό&gamma;&omicron;&upsilon;:<br />
+											&euro;1 539.00</b><br />
+											<b>&Eta; &tau;&iota;&mu;ή &sigma;&alpha;&sigmaf;: </b>&euro;0<br />
+											<b>&Alpha;&pi;&omicron;&mu;έ&nu;&omicron;&upsilon;&nu;: </b>1 &alpha;&pi;έ&mu;&epsilon;&iota;&nu;&alpha;&nu;<br />
+											<font style="size: 8px; z-index: 100;"><b>&Epsilon;&Gamma;&Gamma;&Upsilon;&Eta;&Sigma;&Eta; &Tau;&Iota;&Mu;&Omega;&Nu;!</b></font></p>
+										<p>
+											&nbsp;</p>
+										<div class="prizebtn btnwrapper">
+											<a href="[[link]]" rel="noreferrer" style="text-decoration:none; color:#ffffff;">&Delta;&iota;&epsilon;&kappa;&delta;&iota;&kappa;ή&sigma;&tau;&epsilon; &tau;ώ&rho;&alpha;</a></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="box box3">
+				<div class="reviews wrapper">
+					<div class="wrapper">
+						<h2 style="
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: -25px;
+">
+							&Sigma;&chi;ό&lambda;&iota;&alpha;:</h2>
+					</div>
+					<table class="wrapper" style="padding-top:8px;">
+						<tbody>
+							<tr>
+								<td align="left" valign="top" width="70px">
+									<img class="roundimg" src="http://img.mobilenobo.net/Js_t4l9XMW_6OMq.jpg" /></td>
+								<td align="left" class="commentpad" valign="top">
+									<div class="name">
+										Stefi Vasilopoulou</div>
+									<div class="text">
+										&Mu;ό&lambda;&iota;&sigmaf; &pi;&alpha;&rho;έ&lambda;&alpha;&beta;&alpha; &tau;&omicron; &kappa;&iota;&nu;&eta;&tau;ό &mu;&omicron;&upsilon;. &Sigma;&alpha;&sigmaf; &epsilon;&upsilon;&chi;&alpha;&rho;&iota;&sigma;&tau;ώ &gamma;&iota;&alpha; &tau;&omicron; iPhone!!!</div>
+									<img class="fbimg" src="http://img.mobilenobo.net/EfJnRJksB_7OWbk.jpg" />
+									<div class="date2">
+										&Pi;&rho;&iota;&nu; &alpha;&pi;ό 17 &lambda;&epsilon;&pi;&tau;ά</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" valign="top" width="70px">
+									<img class="roundimg" src="http://img.mobilenobo.net/cjiiOiUWWceKJ7c.jpg" /></td>
+								<td align="left" class="commentpad" valign="top">
+									<div class="name">
+										George Karahalios</div>
+									<div class="text">
+										&Tau;έ&lambda;&epsilon;&iota;&alpha;! &Delta;&epsilon;&nu; έ&chi;&omega; &kappa;&epsilon;&rho;&delta;ί&sigma;&epsilon;&iota; &pi;&omicron;&tau;έ &sigma;&tau;&eta; &zeta;&omega;ή &mu;&omicron;&upsilon;, &alpha;&lambda;&lambda;ά &sigma;ή&mu;&epsilon;&rho;&alpha; &sigma;&tau;ά&theta;&eta;&kappa;&alpha; &tau;&upsilon;&chi;&epsilon;&rho;ό&sigmaf; !! &Epsilon;&upsilon;&chi;&alpha;&rho;&iota;&sigma;&tau;ώ &tau;&eta;&nu; Apple! &Epsilon;&pi;έ&lambda;&epsilon;&xi;&alpha; &tau;&eta; &mu;&alpha;ύ&rho;&eta; έ&kappa;&delta;&omicron;&sigma;&eta; &tau;&omicron;&upsilon; &kappa;&iota;&nu;&eta;&tau;&omicron;ύ</div>
+									<div class="date2">
+										&Pi;&rho;&iota;&nu; &alpha;&pi;ό 44 &lambda;&epsilon;&pi;&tau;ά</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" valign="top" width="70px">
+									<img class="roundimg" src="http://img.mobilenobo.net/Q7RYZty6pshARHR.jpg" /></td>
+								<td align="left" class="commentpad" valign="top">
+									<div class="name">
+										Kriton Kounelakis</div>
+									<div class="text">
+										&Sigma;&tau;&eta;&nu; &alpha;&rho;&chi;ή &sigma;&kappa;έ&phi;&tau;&eta;&kappa;&alpha; ό&tau;&iota; &epsilon;&pi;&rho;ό&kappa;&epsilon;&iota;&tau;&omicron; &gamma;&iota;&alpha; &alpha;&sigma;&tau;&epsilon;ί&omicron;, &alpha;&lambda;&lambda;ά &sigma;&tau;&eta;&nu; &pi;&rho;&alpha;&gamma;&mu;&alpha;&tau;&iota;&kappa;ό&tau;&eta;&tau;&alpha; &tau;&omicron; iPhone 11 Pro MAX έ&phi;&tau;&alpha;&sigma;&epsilon; &sigma;ή&mu;&epsilon;&rho;&alpha; &tau;&omicron; &pi;&rho;&omega;ί&hellip; &Tau;ώ&rho;&alpha; &mu;&pi;&omicron;&rho;ώ &nu;&alpha; &delta;&iota;&epsilon;&kappa;&delta;&iota;&kappa;ή&sigma;&omega; &Omicron;&Lambda;&Alpha; &tau;&alpha; &upsilon;&pi;ό&lambda;&omicron;&iota;&pi;&alpha; &delta;&iota;&alpha;&theta;έ&sigma;&iota;&mu;&alpha; &kappa;&omicron;&mu;&mu;ά&tau;&iota;&alpha; &kappa;ά&tau;&iota; &tau;&omicron; &omicron;&pi;&omicron;ί&omicron; &phi;&upsilon;&sigma;&iota;&kappa;ά έ&kappa;&alpha;&nu;&alpha; &chi;&alpha;&chi;&alpha;!</div>
+									<div class="date2">
+										&Pi;&rho;&iota;&nu; &alpha;&pi;ό 50 &lambda;&epsilon;&pi;&tau;ά</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" valign="top" width="70px">
+									<img class="roundimg" src="http://img.mobilenobo.net/vQ8xXy3oiH2sW05.jpg" /></td>
+								<td align="left" class="commentpad" valign="top">
+									<div class="name">
+										Sarita Varouch</div>
+									<div class="text">
+										&Tau;&omicron; &kappa;&omicron;&upsilon;ί&zeta; ή&tau;&alpha;&nu; &epsilon;ύ&kappa;&omicron;&lambda;&omicron;, &epsilon;&lambda;&pi;ί&zeta;&omega; &nu;&alpha; &kappa;&epsilon;&rho;&delta;ί&sigma;&omega; &kappa;&iota; &epsilon;&gamma;ώ &tau;&omicron; iPhone 11 pro max</div>
+									<div class="date2">
+										3 ώ&rho;&epsilon;&sigmaf; &pi;&rho;&iota;&nu;</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" valign="top" width="70px">
+									<img class="roundimg" src="http://img.mobilenobo.net/7kAQHFDwF9t4l07.jpg" /></td>
+								<td align="left" class="commentpad" valign="top">
+									<div class="name">
+										Dimitra Mortogia</div>
+									<div class="text">
+										&Alpha;&chi;&chi;&chi;, ή&theta;&epsilon;&lambda;&alpha; &tau;ό&sigma;&omicron; &pi;&omicron;&lambda;ύ &tau;&omicron; iPhone 11 pro Max! &Alpha;&lambda;&lambda;ά &delta;&upsilon;&sigma;&tau;&upsilon;&chi;ώ&sigmaf; έ&chi;&epsilon;&iota; &epsilon;&xi;&alpha;&nu;&tau;&lambda;&eta;&theta;&epsilon;ί !!!!! &Alpha;&nu;&alpha;&gamma;&kappa;&alpha;&sigma;&tau;&iota;&kappa;ά &pi;ή&rho;&alpha; &tau;&eta; &mu;&alpha;ύ&rho;&eta; έ&kappa;&delta;&omicron;&sigma;&eta;. &Kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&alpha; &alpha;&pi;ό &tau;&omicron; &tau;ί&pi;&omicron;&tau;&alpha; ... &Sigma;&Alpha;&Sigma; &Epsilon;&Upsilon;&Chi;&Alpha;&Rho;&Iota;&Sigma;&Tau;&Omega;</div>
+									<div class="date2">
+										3 ώ&rho;&epsilon;&sigmaf; &pi;&rho;&iota;&nu;</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" valign="top" width="70px">
+									<img class="roundimg" src="http://img.mobilenobo.net/anNJjGH3Stod6ac.jpg" /></td>
+								<td align="left" class="commentpad" valign="top">
+									<div class="name">
+										Theodosis Michalopoulos</div>
+									<div class="text">
+										&Epsilon;ί&chi;&alpha; &delta;&epsilon;&iota; &alpha;&upsilon;&tau;ό&nu; &tau;&omicron;&nu; &delta;&iota;&alpha;&gamma;&omega;&nu;&iota;&sigma;&mu;ό ά&lambda;&lambda;&alpha; &tau;&omicron;&nu; &alpha;&gamma;&nu;ό&eta;&sigma;&alpha; &gamma;&iota;&alpha;&tau;ί &nu;ό&mu;&iota;&zeta;&alpha; &pi;&omega;&sigmaf; &epsilon;&pi;&rho;ό&kappa;&epsilon;&iota;&tau;&omicron; &gamma;&iota;&alpha; &phi;ά&rho;&sigma;&alpha; &phi;ά&rho;&sigma;&alpha;. &Mu;&epsilon;&tau;ά &epsilon;ί&delta;&alpha; &tau;&eta; &delta;&iota;&alpha;&phi;ή&mu;&iota;&sigma;&eta; &kappa;&alpha;&iota; &alpha;&pi;&omicron;&phi;ά&sigma;&iota;&sigma;&alpha; &nu;&alpha; &delta;&omicron;&kappa;&iota;&mu;ά&sigma;&omega; &tau;&eta;&nu; &tau;ύ&chi;&eta; &mu;&omicron;&upsilon; &gamma;&iota;&alpha;&tau;ί &beta;&alpha;&rho;&iota;ό&mu;&omicron;&upsilon;&nu; ... &Kappa;&iota; έ&tau;&sigma;&iota; &kappa;έ&rho;&delta;&iota;&sigma;&alpha; έ&nu;&alpha; iPhone! &Alpha;&pi;ί&sigma;&tau;&epsilon;&upsilon;&tau;&omicron;!</div>
+									<img class="fbimg" src="http://img.mobilenobo.net/TOQai0fuwVrHlrN.jpeg" />
+									<div class="date2">
+										6 ώ&rho;&epsilon;&sigmaf; &pi;&rho;&iota;&nu;</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<table class="wrapper">
+						<tbody>
+							<tr>
+								<td align="left" valign="top" width="70px">
+									<img class="roundimg" src="http://img.mobilenobo.net/AqBAsYZJFlMVroU.jpg" /></td>
+								<td align="left" class="commentpad" valign="top">
+									<div class="name">
+										Silvia Bueso</div>
+									<div class="text">
+										&Tau;έ&lambda;&epsilon;&iota;&alpha;! &Delta;&epsilon;&nu; έ&chi;&omega; &kappa;&epsilon;&rho;&delta;ί&sigma;&epsilon;&iota; &pi;&omicron;&tau;έ &mu;&omicron;&upsilon;, &alpha;&lambda;&lambda;ά &sigma;ή&mu;&epsilon;&rho;&alpha; &epsilon;&lambda;&pi;ί&zeta;&omega; &nu;&alpha; &sigma;&tau;&alpha;&theta;ώ &tau;&upsilon;&chi;&epsilon;&rho;ή!!</div>
+									<img class="fbimg" src="http://img.mobilenobo.net/bFTUavNn_ZukXAn.jpg" />
+									<div class="date2">
+										9 ώ&rho;&epsilon;&sigmaf; &pi;&rho;&iota;&nu;</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr />
+					<div style="height:10px; ">
+						&nbsp;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer ">
+		&nbsp;</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script><script>
+
+var slidewhere = 0;
+var holvanszlider = 0;
+
+function drawszlider(ossz, meik) {
+    var szazalek = Math.round((meik * 100) / ossz);
+    document.getElementById("szliderbar").style.width = szazalek + "%";
+    document.getElementById("szazalek").innerHTML = szazalek + "%";
+    holvanszlider = meik;
+    t = setTimeout("drawszlider(100, slidewhere);slidewhere = holvanszlider + 1; if (slidewhere > 100) {slidewhere = 100;}", 50);
+ }
+
+(function myFunction() {
+
+	var x = document.getElementsByClassName("date");
+
+    for (var i = 0; i < x.length; i++) {
+
+    	var d = new Date();
+        x[i].innerHTML = d.toDateString();
+    }
+
+})();
+
+function startTimer(t){
+	var e,n,r=t,
+		a=setInterval(function() {
+			e=parseInt(r/60,10),
+			n=parseInt(r%60,10),
+			n=10>n?"0"+n:n,
+			$("#timer").text(e+" Λεπτά "+n+" δευτερολέπτων"),--r<0&&(clearInterval(a))
+	},1e3)}
+startTimer((3 * 60) + 59);
+
+$(function() {
+
+	$(".close").click(function() {
+
+		$("#popUp").fadeOut();
+
+	});
+	
+	$(".question1 .answer").click(function() {
+
+        $(".question1 .percentages").fadeIn();
+
+        setTimeout(function(){
+            $(".question1").hide(0, function() {
+                $(".question2").fadeIn()
+            })
+        }, 1500);
+
+	}), $(".question2 .answer").click(function() {
+
+        $(".question2 .percentages").fadeIn();
+
+        setTimeout(function(){
+            $(".question2").hide(0, function() {
+                $(".question3").fadeIn()
+            })
+        }, 1500);
+
+	}), $(".question3 .answer").click(function() {
+
+        $(".question3 .percentages").fadeIn();
+
+        setTimeout(function(){
+            $(".question3").hide(0, function() {
+                $(".question4").fadeIn()
+            })
+        }, 1500);
+
+	}), $(".question4 .answer").click(function() {
+		$(".question4 .percentages").fadeIn();
+		setTimeout(function(){
+            $(".question4").hide(0, function() {
+                $(".validate").show(), 
+		    	$("#v1a, #v1b").fadeIn()
+            });
+        }, 1500);
+
+		drawszlider(10,0);
+
+	    setTimeout(function() {
+	        $("#v1a, #v1b").hide(),  
+	        $("#v1c, #v2a, #v2b").show()
+	    }, 2e3),
+
+	    setTimeout(function() {
+	        $("#v2a, #v2b").hide(),  
+	        $("#v2c, #v3a, #v3b").show()
+	    }, 3000), 
+
+	    setTimeout(function() {
+	        $("#v3a, #v3b").hide(), 
+	        $("#v3c, #vfinal").show()
+	    }, 6000), 
+
+	    setTimeout(function() {
+	    	$(".prizes").show()
+	    }, 6000)
+
+	});
+});
+
+
+</script><!-- BACKGROUND --><!-- BACKGROUND ENDS -->
