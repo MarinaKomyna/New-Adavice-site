@@ -32,7 +32,7 @@ h3 {
 }
 
 .wrapper {
-	min-width: 1170px;
+	min-width: 980px;
 	max-width: 1366px;
 	margin-right: auto;
 	margin-left: auto;
@@ -130,7 +130,7 @@ a {
 	background: url(../img/herobanner.jpg);
 	background-size: cover;
 	background-position: center;
-	height: 930px;
+	height: 100vh;
 	display: block;
 }
 .hero .wrapper {
@@ -321,8 +321,9 @@ footer a:visited {
 }
 
 
+/*ABOUT================================*/
 
-/*ABOUT*/
+
 .about .hero {
 	background: linear-gradient( 0deg, #003d71e8, #003d71e8), url(../img/hero_about.jpg);
 	overflow: hidden;
@@ -413,6 +414,9 @@ footer a:visited {
 	margin-bottom: 0;
 
 }
+.iconsection.leaders .iconbox  span:nth-child(3) {
+	color: #0074be;
+}
 
 .about .halfblock .img {
     display: inline-block;
@@ -436,4 +440,129 @@ footer a:visited {
     margin-left: 50%;
     width: 50%;
     text-align: center;
+}
+
+
+/*CONTACT=========================*/
+
+.contact .hero {
+	display: flex;
+	background: url(../img/contact_hero.jpg);
+}
+.contact .hero > div {
+    text-align: center;
+    margin: auto;
+    height: max-content;
+    width: 100%;
+    padding: 30px 0;
+    background: #003d71c2;
+}
+
+.contact .hero > div h1{
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.twoblocks {
+	display: flex;
+	flex-direction: row;
+}
+.twoblocks > div {
+	padding: 70px 0;
+    width: 50vw;
+    display: flex;
+}
+.officebox {
+	margin: auto;
+}
+
+.officebox h2 {
+	margin: 30px 0 10px;
+}
+
+.smallForm {
+	padding: 70px 0;
+	color: #fff;
+	background: var(--main-color);
+	height: 300px;
+}
+.smallForm .wrapper {
+	position: relative;
+}
+.smallForm h2 {
+	margin: 0 0 20px
+}
+.smallForm .leftblock {
+	padding-left: 20px;
+}
+.smallForm .rightblock {
+	text-align: left;
+}
+.smallForm span {
+	display: block;
+	margin-bottom: 15px;
+}
+.smallForm .button {
+	    width: 180px;
+	    margin-right: unset;
+
+}
+ .leftblock a {color: #fff;}
+ .smallForm .email {
+	text-align: center;
+    width: 350px;
+    height: 42px;
+    border-radius: 250px;
+    text-align: left;
+    color: #fff;
+    border: 2px solid #fff;
+    background: var(--main-color);
+    padding: 10px 30px;
+}
+ .smallForm .email::placeholder {
+ 	color: #fff;
+ }
+
+body.contact > section:nth-child(5) {
+    text-align: center;
+    padding: 0px 0px;
+    height: 700px;
+}
+
+.contact .halfblock .img {
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+    width: 50%;
+    background: url(../img/contactForm.jpg);
+    background-size: cover;
+    height: 100%;
+}
+.contact .halfblock form >textarea,
+.contact .halfblock form >input:not(.button) {
+	text-align: center;
+    width: 350px;
+    height: 42px;
+    border-radius: 250px;
+    border: 2px solid var(--main-color);
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.contact .halfblock form >textarea {
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 100px;
+}
+.contact .halfblock form >input::placeholder {
+	color: var(--main-color);
+}
+.contact .halfblock .wrapper {
+    height: 100%;
+    display: flex;
+}
+.contact .halfblock form >textarea::placeholder {
+	color: var(--main-color);
 }

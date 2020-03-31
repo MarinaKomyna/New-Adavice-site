@@ -1,4 +1,4 @@
-@media all and (max-width: 1150px) {
+@media all and (max-width: 1100px) {
 		[class*="desk"] {
 	    display: none !important;
 	}
@@ -279,9 +279,7 @@
 .iconsection.leaders .iconbox {
 	padding: 0;
 }
-.iconsection.leaders .iconbox  span:nth-child(2) {
-	color: #0074be;
-}
+
 .iconsection.leaders .iconbox p {
     display: block;
     margin-bottom: 10px;
@@ -323,4 +321,65 @@
 }
 
 
+/*CONTACT US*/
+
+.contact .hero {
+    display: flex;
+    background: url(../img/contact_hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.twoblocks {
+	flex-direction: column;
+}
+.twoblocks p, .twoblocks h2{
+	padding: 0 15px;}
+.twoblocks > div:nth-child(1) {
+	padding: 70px 0 0;
+}
+
+
+.contact .halfblock {
+    height: 100vh;
+    background: linear-gradient( 0deg, #ffffffcc, #ffffffcc), url(../img/team.jpg) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.contact .halfblock form {
+	color: var(--main-color);
+}
+.contact .halfblock form >textarea, .contact .halfblock form >input:not(.button) {
+    text-align: left;
+    width: unset;
+    width: 80vw;
+}
+.contact .smallForm .rightblock {
+    position: relative;
+    text-align: center;
+    right: 0;
+}
+
+.smallForm {
+    padding: 70px 0;
+    color: #fff;
+    background: var(--main-color);
+    height: max-content;
+}
+
+.smallForm .leftblock, .smallForm .rightblock {
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.smallForm .leftblock span {
+text-align: left;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.smallForm .email, .smallForm .button {
+	width: 80vw;
+}
+.leftblock a {color: #fff;}
 }
