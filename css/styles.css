@@ -491,13 +491,16 @@ footer a:visited {
 	position: relative;
 }
 .smallForm h2 {
-	margin: 0 0 20px
+	margin: 0 0 20px;
+	display: inline;
 }
 .smallForm .leftblock {
 	padding-left: 20px;
 }
 .smallForm .rightblock {
 	text-align: left;
+	float: right;
+	position: relative;
 }
 .smallForm span {
 	display: block;

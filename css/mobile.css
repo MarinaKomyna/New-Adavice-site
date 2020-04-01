@@ -338,6 +338,12 @@
 .twoblocks > div:nth-child(1) {
 	padding: 70px 0 0;
 }
+.twoblocks > div {
+    padding: 70px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
 
 
 .contact .halfblock {
@@ -357,7 +363,9 @@
 .contact .smallForm .rightblock {
     position: relative;
     text-align: center;
-    right: 0;
+    width: 100%;
+    margin-bottom: 70px;
+
 }
 
 .smallForm {
@@ -366,17 +374,24 @@
     background: var(--main-color);
     height: max-content;
 }
+.smallForm h2.mob {
+	display: block !important;
+	text-align: center;
+
+}
 
 .smallForm .leftblock, .smallForm .rightblock {
 	position: relative;
 	text-align: center;
-	margin-bottom: 30px;
+	padding: 0;
 }
-
+.smallForm span {
+	margin-bottom: 20px;
+}
 .smallForm .leftblock span {
-text-align: left;
+text-align: center;
     font-size: 16px;
-    margin-bottom: 15px;
+
 }
 .smallForm .email, .smallForm .button {
 	width: 80vw;
