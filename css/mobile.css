@@ -310,9 +310,7 @@
 	100%{background-position: calc(100% - 100vw);}
 
 }
-.infographic > .wrapper.click {
 
-}
 .infographic > .wrapper img {
     transform: translate(0px, 0px);
     height: 86%;
@@ -365,6 +363,7 @@
     text-align: center;
     width: 100%;
     margin-bottom: 70px;
+    z-index: 50;
 
 }
 
@@ -397,4 +396,53 @@ text-align: center;
 	width: 80vw;
 }
 .leftblock a {color: #fff;}
+
+/*SERVICES*/
+
+.services .halfblock {
+    height: min-content;
+}
+.services .hero {
+   height: unset;
+}
+
+.services .hero .wrapper {
+    display: flex;
+    height: unset;
+    margin: auto;
+}
+.services .hero .about_text {
+    color: #fff;
+    margin-left: unset;
+    padding-left: unset;
+    width: unset;
+    text-align: left;
+    height: auto;
+}
+.services .halfblock .half_info {
+    width: 100%;
+    margin: auto 0;
+    padding: 30px 15px;
+    color: #fff;
+}
+.services .halfblock.right .half_info {
+    margin-left: unset;
+    color: var(--main-color);
+}
+.services .halfblock .half_info {
+    width: 100%;
+    margin: auto 0;
+    padding: 70px 0px 70px 20px;
+    color: #fff;
+}
+.services .halfblock .img {
+    width: 50%;
+    height: unset;
+    position: relative;
+}
+.services .halfblock .wrapper {
+    padding: 0 20px 0 0;
+}
+
+
 }
