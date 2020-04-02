@@ -444,5 +444,11 @@ text-align: center;
     padding: 0 20px 0 0;
 }
 
+.thx {
+	height: calc(100vh - 100px); 
+	color: var(--main-color);
+	display: flex;
+	background: linear-gradient( 0deg, #ffffffbf, #ffffffbf), url(../img/contact_hero.jpg) center no-repeat;
+}
 
 }
