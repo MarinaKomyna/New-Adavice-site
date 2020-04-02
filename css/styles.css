@@ -668,3 +668,15 @@ body.contact > section:nth-child(5) {
     background-position: right;
     color: var(--main-color);
 }
+.button_block {
+	height: 400px;
+	display: flex;
+
+}
+.button_block > div {
+	margin: auto; 
+}
+.button_block h2 {
+	text-align: center;
+
+}
