@@ -3,6 +3,13 @@
 --main-color: #133f6f;
 --highlight: #f0ad1c;
 }
+*{
+-webkit-tap-highlight-color: transparent;
+}
+*:focus {
+    outline: none; 
+}
+
 html, body {
 	overflow-x: hidden;
 }
@@ -74,7 +81,9 @@ header .wrapper {
     margin-top: 30px;
     transition: box-shadow 0.5s;
     cursor: pointer;
+
 }
+
 .button:hover {
 	box-shadow: 0 0px 15px #ffc902;
 }
@@ -617,6 +626,13 @@ body.contact > section:nth-child(5) {
 .services .halfblock {
     position: relative;
     height: 400px;
+    color: #fff;
+    background: var(--main-color);
+}
+.halfblock.right {
+    height: 400px;
+    color: var(--main-color);
+    background: #fff;
 }
 .services .halfblock .half_info {
     width: 50%;
@@ -661,13 +677,7 @@ body.contact > section:nth-child(5) {
     background: url(../img/webdev.jpg) center no-repeat;
      background-size: cover;
 }
-.halfblock.right {
-    height: 400px;
-    background: linear-gradient( 0deg, #ffffffe8, #ffffffe8), url(../img/team.jpg) no-repeat;
-    background-size: cover;
-    background-position: right;
-    color: var(--main-color);
-}
+
 .button_block {
 	height: 400px;
 	display: flex;
@@ -696,3 +706,62 @@ body.contact > section:nth-child(5) {
     text-align: center;
     margin-bottom: 30px;
 }
+
+/*POP UP*/
+
+#popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #00000080;
+    display: flex;
+    display: none;
+    z-index: 100;
+}
+#popup .content {
+    width: 65%;
+}
+.pop_banner {
+    position: relative;
+    min-height: 350px;
+    margin: auto;
+    margin-top: 25vh;
+    max-width: 700px;
+    color: #fff;
+    background: linear-gradient(45deg, #0b518c, #186eb7);
+    padding: 40px;
+
+}
+#popup #close {
+}
+
+#popup .button {
+    margin-top: 55px;
+}
+.pop_banner img {
+    position: absolute;
+    right: -140px;
+    top: -50px;
+    width: 400px;
+    pointer-events: none;
+}
+#close_pop {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 32px;
+    cursor: pointer;
+}
+#close_pop2 {
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#close_pop2:visited {
+    color: #fff;
+}
+

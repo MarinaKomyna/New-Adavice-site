@@ -450,5 +450,23 @@ text-align: center;
 	display: flex;
 	background: linear-gradient( 0deg, #ffffffbf, #ffffffbf), url(../img/contact_hero.jpg) center no-repeat;
 }
+.halfblock.right {
+    height: 400px;
+    background: #fff;
+ 
+    color: var(--main-color);
+}
+
+
+.pop_banner img {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    width: 300px;
+    opacity: 0.1;
+}
+#popup .content {
+    width: 100%;
+}
 
 }
