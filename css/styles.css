@@ -406,6 +406,9 @@ footer a:visited {
 .about .iconsection.dark .iconbox img {
 	height: 68px;
 }
+.iconsection.leaders {
+    padding: 70px 0;
+}
 .iconsection.leaders h2 {
     position: absolute;
     text-align: center;
@@ -586,6 +589,7 @@ body.contact > section:nth-child(5) {
     overflow: hidden;
     height: 100vh;
     display: flex;
+    background-size: cover;
 }
 .services .hero .wrapper {
     display: flex;
