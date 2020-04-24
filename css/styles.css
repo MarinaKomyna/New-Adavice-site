@@ -180,7 +180,7 @@ a {
 	white-space: nowrap;
 	float: left;
 	height: min-content;
-	margin: 70px 0;
+	margin: 50px 0 70px;
 
 }
 
@@ -208,7 +208,10 @@ a {
     display: block;
   
 }
-
+h2.center {
+    margin-top: 70px;
+    text-align: center;
+}
 .iconsection .iconbox:nth-child(2) > img.connector {
 	top: unset;
 	bottom: -150px;
