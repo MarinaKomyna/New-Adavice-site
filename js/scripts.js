@@ -2,7 +2,7 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
     	if ($('#popup')) {
-			setTimeout(show_pop, 2e3);
+			setTimeout(show_pop, 15e3);
 			function show_pop(){
 				$('#popup').fadeIn(900);
 			}
