@@ -115,7 +115,7 @@ header .wrapper {
 .active a:after {
 	content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: calc(100% - 10px);
     background: var(--highlight);
     height: 4px;
