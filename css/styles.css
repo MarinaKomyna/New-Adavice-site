@@ -776,6 +776,8 @@ body.contact > section:nth-child(5) {
     transform: rotate(45deg);
     font-size: 32px;
     cursor: pointer;
+    user-select: none;
+
 }
 #close_pop2 {
     color: #fff;
