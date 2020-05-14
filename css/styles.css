@@ -14,6 +14,7 @@ html, body {
 	overflow-x: hidden;
 }
 body {
+
 	color: var(--main-color)
 }
 body, p, h1, h2, h3, h4, span, ul {
@@ -48,7 +49,7 @@ h3 {
 }
 
 header {
-	color: var(--main-color)
+	color: var(--main-color);
 	top: 0;
     height: 85px;
     background: #fff;
@@ -112,12 +113,15 @@ header .wrapper {
 .desk-menu a:hover {
 	color: #005abb;
 }
+
+
+
 .active a:after {
 	content: '';
     position: absolute;
     bottom: -1px;
     width: calc(100% - 10px);
-    background: var(--highlight);
+	background: var(--highlight);
     height: 4px;
     left: 0
 }
@@ -188,7 +192,7 @@ a {
 	display: block;
 	margin-bottom: 15px;
 	font-weight: 900;
-    text-align: 
+
 
 }
 .iconbox img {
@@ -306,7 +310,7 @@ footer {
 .leftblock span {
 	display: block;
 	font-size: 16px;
-	font-weight: 600px;
+	font-weight: 600;
 	margin: 20px 0;
 }
 .rightblock {
@@ -588,7 +592,59 @@ body.contact > section:nth-child(5) {
 .contact .halfblock form >textarea::placeholder {
 	color: var(--main-color);
 }
+.partners {
+	background: #133f6f;
+	border-bottom: 1px solid #0074be;
+	overflow: hidden;
+}
+.partners .wrapper {
+	min-height: 400px;
+	display: flex;
+	flex-direction: row;
+	padding: 30px 20px;
+}
+.partners h2 {
+	color: #fff;
+	padding: 0 15px;
+}
+.partner {
+	display: inline-block;
+	white-space: nowrap;
+	background: #fff;
+	width: calc(100% / 3 - 40px);
+	padding: 70px 30px 180px;
+	margin: 30px 20px;
+	position: relative;
+	box-shadow: 0 13px 12px -5px #0000007a;
+}
+.partner > * {
+	white-space: normal;
+}
+.partner_box > div {
+	max-width: 275px;
+}
+.partner_box {
+position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	bottom: 70px;
+	width: max-content;
+}
+.partner_box img {
+	width: 80px;
+	border-radius: 300px;
+	float: left;
+	margin-right: 20px;
+	box-shadow: 0 2px 3px #868686;
+}
+.partner_box span {
+	display: inline-block;
 
+}
+.partner_box .partnername {
+	font-weight: 700;
+	margin-top: 17px;
+}
 /*SERVICES*/
 .services .hero {
     background: linear-gradient( 0deg, #ffffffe3, #ffffffe3), url(../img/digital.jpg) center no-repeat;
@@ -730,6 +786,8 @@ body.contact > section:nth-child(5) {
     text-align: center;
     margin-bottom: 30px;
 }
+
+
 
 /*POP UP*/
 

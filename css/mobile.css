@@ -168,8 +168,19 @@
 		margin-top: 70px;
 		margin-bottom: 0;
 	}
+	.iconbox p {
+		text-align: center;
+	}
+	body > section.iconsection.wrapper > div:nth-child(5) {
+	margin-bottom: 70px
+	}
+
+
 	.iconbox:nth-child(4) {
 		margin-bottom: 70px;
+	}
+	.howWorks > div > div:nth-child(4) {
+		margin-bottom: 0;
 	}
 	.third_block .column {
 	    max-width: 100%;
@@ -366,7 +377,22 @@
     z-index: 50;
 
 }
+	.partners .wrapper {
 
+		display: flex;
+		flex-direction: column;
+
+	}
+	.partner {
+		display: inline-block;
+		white-space: nowrap;
+		background: #fff;
+		width: 100%;
+		padding: 70px 30px 180px;
+		margin: 30px 0px;
+		position: relative;
+		box-shadow: 0 13px 12px -5px;
+	}
 .smallForm {
     padding: 70px 0;
     color: #fff;
