@@ -553,7 +553,11 @@ footer a:visited {
 body.contact > section:nth-child(5) {
     text-align: center;
     padding: 0px 0px;
-    height: 700px;
+}
+.contact .halfblock {
+	background: var(--main-color);
+	color: #fff;
+	height: 700px;
 }
 
 .contact .halfblock .img {
@@ -566,7 +570,7 @@ body.contact > section:nth-child(5) {
     height: 100%;
 }
 .contact .halfblock form >textarea,
-.contact .halfblock form >input:not(.button) {
+.contact .halfblock form input:not(.button) {
 	text-align: center;
     width: 350px;
     height: 42px;
@@ -592,8 +596,20 @@ body.contact > section:nth-child(5) {
 .contact .halfblock form >textarea::placeholder {
 	color: var(--main-color);
 }
+.capt-box {
+	margin-top: -5px;
+}
+#capt-img {
+	width: 140px;
+}
+#capt-input {
+	width: 175px;
+	margin-left: 25px;
+	white-space: nowrap;
+	vertical-align: text-bottom;
+}
 .partners {
-	background: #133f6f;
+	background: #fff;
 	border-bottom: 1px solid #0074be;
 	overflow: hidden;
 }
@@ -604,13 +620,13 @@ body.contact > section:nth-child(5) {
 	padding: 30px 20px;
 }
 .partners h2 {
-	color: #fff;
+	color: var(--main-color);
 	padding: 0 15px;
 }
 .partner {
 	display: inline-block;
 	white-space: nowrap;
-	background: #fff;
+	background: var(--main-color);
 	width: calc(100% / 3 - 40px);
 	padding: 70px 30px 180px;
 	margin: 30px 20px;
@@ -618,10 +634,13 @@ body.contact > section:nth-child(5) {
 	box-shadow: 0 13px 12px -5px #0000007a;
 }
 .partner > * {
+	color: #fff;
 	white-space: normal;
+	text-align: left;
 }
 .partner_box > div {
 	max-width: 275px;
+	text-align: left;
 }
 .partner_box {
 position: absolute;
@@ -635,14 +654,17 @@ position: absolute;
 	border-radius: 300px;
 	float: left;
 	margin-right: 20px;
-	box-shadow: 0 2px 3px #868686;
+	box-shadow: 0 2px 3px #00000082;
 }
 .partner_box span {
 	display: inline-block;
 
 }
+.partner_box .partner_title {
+	color: var(--highlight);
+}
 .partner_box .partnername {
-	font-weight: 700;
+
 	margin-top: 17px;
 }
 /*SERVICES*/
