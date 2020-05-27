@@ -144,7 +144,7 @@
 	<div class="wrapper">
 		<div class="desk img"></div>
 		
-			<form id="form2" action="./submitted.html">
+			<form id="form2" action="./submitted.html" method="post">
 				<h2>let's get in touch</h2>
 				<input type="text" name="name" required placeholder="Name">
 				<input type="text" name="email" required placeholder="Email">
@@ -222,6 +222,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="./js/scripts.js"></script>
 <script src="./js/mob_menu.js"></script>
+<script>
+	$('#form2').on('submit', function (){
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			'event': 'send_form_talk_to_us'
 
+		});
+	})
+</script>
 </body>
 </html>
