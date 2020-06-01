@@ -239,34 +239,44 @@
 	.halfblock .button, .halfblock form .email {
 		width: 80%;
 	}
+
 	footer{
 		height: 250px;
 	}
 	footer .logo {
 		width: 130px;
 	}
-	footer .rightblock > a:first-child {
-        margin-right: 0px;
-    margin-bottom: 16px;
-	}
 	footer .rightblock > a {
-		display: block;
+        margin-right: 0px;
+
+display: block;
 		font-size: 14px;
 	}
+	.rightblock a:not(:last-child) {
+		margin-bottom: 6px;
+	}
+
 	.leftblock span {
 		margin: 0px;
 		font-size: 14px;
 	}
+	footer .social {
+		display: flex;
+		position: absolute;
+		left: 0;
+		bottom: -7px;
+		width: min-content;
+		height: min-content;
+	}
 
 
-/*ABOUT==============================*/
-.about .hero {display: block;}
-.about .hero .about_text {
+	/*ABOUT==============================*/
+	.about .hero {display: block;}
+	.about .hero .about_text {
     color: #fff;
     margin: auto 0;
     width: 100%;
     text-align: left;
-
 }
 .iconsection.dark .iconbox {
 	width: 50% !important;

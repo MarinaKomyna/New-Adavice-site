@@ -106,8 +106,23 @@ header .wrapper {
 	display: inline-block;
 	padding-right: 10px;
 	height: 56px;
-	
-	
+
+}
+.footer-menu {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.footer-menu li {
+	display: inline-block;
+
+}
+.footer-menu li:not(:last-child) {
+	margin-right: 20px;
+}
+.desk-menu li:not(:last-child) {
+	margin-right: 20px;
 }
 .desk-menu a, .desk-menu a:visited {color: var(--main-color); transition: 0.5s color; }
 .desk-menu a:hover {
@@ -297,10 +312,11 @@ margin: 0px 0px 20px;
 	padding: 70px 20px;
 }
 footer {
-    background: var(--main-color);
-    color: #fff;
-    height: 210px;
-    padding: 70px 20px;
+	background: var(--main-color);
+	color: #fff;
+	height: 190px;
+	padding: 50px 30px;
+	position: relative;
 }
 .leftblock {
 	position: absolute;
@@ -314,21 +330,22 @@ footer {
 	margin: 20px 0;
 }
 .rightblock {
-	position: absolute;
+
     text-align: right;
     right: 0;
 
 }
 footer .wrapper {
 	position: relative;
+	padding: 0;
 }
 footer .social {
 	position: absolute;
     margin-top: 20px;
     right: 0;
 }
-footer .rightblock > a:first-child {
-	margin-right: 15px;
+footer .rightblock > a {
+	margin-left: 15px;
 }
 footer a {
 	color: #fff;

@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+
 		var popFired = false;
     	if ($('#popup')) {
 
@@ -20,14 +20,12 @@ $( document ).ready(function() {
 				var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view;
 
 				if(element_in_view || has_reached_bottom_of_page) {
-					console.log('fired')
+
 					show_pop();
 
 				}
 			});
-
-
-			function show_pop(){
+function show_pop(){
 				if (popFired == false) {
 					$('#popup').fadeIn(900);
 					popFired = true;
