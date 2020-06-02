@@ -618,6 +618,9 @@ body.contact > section:nth-child(5) {
 }
 #capt-img {
 	width: 140px;
+	vertical-align: top;
+	height: 42px;
+	border-radius: 25px;
 }
 #capt-input {
 	width: 175px;

@@ -235,12 +235,11 @@
 <script>
 	$('#form2').on('submit', function (){
 		window.dataLayer = window.dataLayer || [];
-		window.dataLayer.push({
-			'event': 'send_form_talk_to_us'
-
-		});
+		window.dataLayer.push({'event': 'send_form_talk_to_us'});
 		window.location.replace("./submitted.html");
+		return false;
 	});
+
 </script>
 
 </body>
