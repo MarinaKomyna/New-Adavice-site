@@ -2,9 +2,6 @@ $( document ).ready(function() {
 
 		var popFired = false;
     	if ($('#popup')) {
-
-
-
 			var element_position = $('#popTrigger').offset().top;
 			var screen_height = $(window).height();
 			var activation_offset = 0.5;//determines how far up the the page the element needs to be before triggering the function

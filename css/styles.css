@@ -613,7 +613,7 @@ body.contact > section:nth-child(5) {
 .contact .halfblock form >textarea::placeholder {
 	color: var(--main-color);
 }
-.capt-box {
+.capt-box { display: none;
 	margin-top: -5px;
 }
 #capt-img {
