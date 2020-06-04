@@ -144,7 +144,7 @@
 	<div class="wrapper">
 		<div class="desk img"></div>
 		
-			<form id="form2"  action="https://adavice.com/c/contact_form" method="POST">
+			<form id="form2" method="POST">
 				<h2>let's get in touch</h2>
 				<input type="text" name="name" required placeholder="Name">
 				<input type="email" name="email" required placeholder="Email">
@@ -152,10 +152,10 @@
 				<input type="text" name="company" required placeholder="Company">
 				<input type="text" name="interested" required placeholder="I'm interested in">
 				<textarea type="text-field" name="message" placeholder="Message"></textarea>
-				<div class="capt-box">
-					<img id="capt-img" src="./img/captcha.jpg" alt="">
-					<input id="capt-input"   type="text">
-				</div>
+<!--				<div class="capt-box">-->
+<!--					<img id="capt-img" src="./img/captcha.jpg" alt="">-->
+<!--					<input id="capt-input"   type="text">-->
+<!--				</div>-->
 				<input type="submit"  class="button" value="Talk to our experts">
 			</form>
 		<img src="" alt="">
@@ -228,13 +228,32 @@
 <script src="./js/mob_menu.js"></script>
 <script>
 	$('#form2').on('submit', function (){
+		var formData = {
+			'name'              : $('#name').val(),
+			'email'             : $('#email').val(),
+			'phone'             : $('#phone').val(),
+			'company'           : $('#company').val(),
+			'interested'        : $('#interested').val(),
+			'message'           : $('#message').val(),
+		};
+		$('#form2').prop('disabled', true);
 		window.dataLayer = window.dataLayer || [];
 		window.dataLayer.push({'event': 'send_form_talk_to_us'});
-		window.location.replace("./submitted.html");
+		$.ajax({
+			type        : 'POST',
+			url         : '/c/contact_form',
+			data        :  formData,
+			encode      :  true,
+			success: function(data){
+				window.location.replace("./submitted.html");
+			},
+			error: function(XMLHttpRequest, textStatus, errorThrown) {
+				alert("Something is wrong.");
+			}
+		});
 		return false;
 	});
 
 </script>
-
 </body>
 </html>
