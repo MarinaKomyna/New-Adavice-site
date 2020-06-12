@@ -1,121 +1,116 @@
 @media all and (max-width: 1100px) {
-		[class*="desk"] {
-	    display: none !important;
+	[class*="desk"] {
+		display: none !important;
 	}
+
 	[class*="mob"] {
-	    display: unset !important;
+		display: unset !important;
 	}
+
 	html {
 		overflow-x: hidden;
 	}
+
 	/*MENU*/
 	#navigation {
-	display: block;
-	z-index: 100;
+		display: block;
+		z-index: 100;
 	}
+
 	/* Menu Icon */
 	.menu-icon {
 		display: flex;
-	    font-size: 1.3em;
-	    width: 48px;
-	    height: 48px;
-	    text-align: center;
-	    color: #003d71;
-	    line-height: 48px;
-	    border-radius: 100%;
-	    border: 1px solid #ffffff;
-	    background-color: #ffffff;
-	    cursor: pointer;
-	    position: absolute;
-	    top: 15px;
-	    right: 20px;
-	    margin: 0 auto;
-		box-shadow: 0px 1px 10px 1px rgba(0, 61, 113, 0.25);	
+		font-size: 1.3em;
+		width: 48px;
+		height: 48px;
+		text-align: center;
+		color: #003d71;
+		line-height: 48px;
+		border-radius: 100%;
+		border: 1px solid #ffffff;
+		background-color: #ffffff;
+		cursor: pointer;
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		margin: 0 auto;
+		box-shadow: 0px 1px 10px 1px rgba(0, 61, 113, 0.25);
 	}
+
 	.menu-icon svg {
 		margin: auto;
 		width: 21px;
 	}
+
 	/* class for the ul*/
 	.menu-close {
-	    transform: rotate(45deg);
-	    font-family: monospace;
-	    display: none;
-	    z-index: 20;
-	    font-size: 48px;
-	    width: 48px;
-	    height: 48px;
-	    text-align: center;
-	    color: #003d71;
-	    line-height: 42px;
-	    border-radius: 100%;
-	    border: 1px solid #ffffff;
-	    background-color: #ffffff;
-	    cursor: pointer;
-	    position: absolute;
-	    top: 15px;
-	    right: 20px;
-	    margin: 0 auto;
+		transform: rotate(45deg);
+		font-family: monospace;
+		display: none;
+		z-index: 20;
+		font-size: 48px;
+		width: 48px;
+		height: 48px;
+		text-align: center;
+		color: #003d71;
+		line-height: 42px;
+		border-radius: 100%;
+		border: 1px solid #ffffff;
+		background-color: #ffffff;
+		cursor: pointer;
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		margin: 0 auto;
 	}
+
 	/* class for the ul*/
 	.menu-items-container {
-	  background-color: #fff;
-	  position: absolute;
-	  display: none;
-	  width: calc(100% - 40px);
-	  margin: 0 auto;
-	  overflow: hidden;
-	  top: 255px;
-	  transform: translateY(-50%);
-	  left: 0;
-	  right: 0;
-	  -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
-	  -moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
-	  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
-	  z-index: 20;
+		background-color: #fff;
+		position: absolute;
+		display: none;
+		width: calc(100% - 40px);
+		margin: 0 auto;
+		overflow: hidden;
+		top: 300px;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+		-webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+		box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+		z-index: 20;
 	}
 
 	.menu-items-container li {
-	  padding: 0 0 0 0;
-	  list-style-type: none;
+		padding: 0 0 0 0;
+		list-style-type: none;
 	}
+
 	.menu-items-container li:hover {
-	  cursor: pointer;
-	  color: #fff;
+		cursor: pointer;
+		color: #fff;
 	}
-	.menu-items-container li:nth-child(1):hover {
-	  background-color: #3bb1f4;
-	}
-	.menu-items-container li:nth-child(2):hover {
-	  background-color: #f8dc3d;
-	}
-	.menu-items-container li:nth-child(3):hover {
-	  background-color: #dd4b39;
-	}
-	.menu-items-container li:nth-child(4):hover {
-	  background-color: #429f46;
-	}
-	.menu-items-container li:nth-child(5):hover {
-	  background-color: #691a99;
-	}
+
+
 	/* circular background for the icons*/
 	.circle-icon {
-	  color: #fff;
-	  text-align: center;
-	  width: 32px;
-	  height: 32px;
-	  line-height: 32px;
-	  border-radius: 100%;
+		color: #fff;
+		text-align: center;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		border-radius: 100%;
 	}
 
 	.menu-text-icons {
 		display: flex !important;
-	  font-size: 1.2em;
-	  display: block;
-	  margin: 10px 0 10px -50px;
-	  float: left;
-	  transition: all 1s ease;
-	  background-color: var(--main-color);
+		font-size: 1.2em;
+		display: block;
+		margin: 10px 0 10px -50px;
+		float: left;
+		transition: all 1s ease;
+		background-color: var(--main-color);
 
 	}
 
@@ -124,36 +119,78 @@
 		height: 20px;
 		margin: auto;
 	}
+
 	/* transition for the icons to move from left side*/
 	.effect-menu-text-icons {
-	  margin-left: 20px;
+		margin-left: 20px;
 	}
+
 	/* text next to icons */
 	.menu-text, .menu-text:visited {
 		color: #005abb;
 		font-weight: 600;
-	  font-size: 1em;
-	  width: 150px;
-	  line-height: 32px;
-	  display: block;
-	  float: right;
-	  margin: 10px -200px 10px 0;
-	  transition: all 1s ease;
+		font-size: 1em;
+		width: 150px;
+		line-height: 32px;
+		display: block;
+		float: right;
+		margin: 10px -200px 10px 0;
+		transition: all 1s ease;
 	}
-	.menu-text.active, .manu-text.active:visited{
+
+	.menu-text.active, .manu-text.active:visited {
 		color: #f0ad1c;
 	}
+
 	/* transition for the text to move from right side*/
 	.effect-menu-text {
-	  margin-right: 75px;
+		margin-right: 75px;
 	}
+
+	#submenu_mb {
+		display: none;
+	}
+
+	#submenu_mb li {
+		border-left: 2px solid #f0f0f0;
+
+		margin-left: 33%;
+		font-size: 16px;
+		font-weight: 600;
+		color: #005abb;
+	}
+	#submenu_mb li > a {
+		display: block;
+		padding-left: 16px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	#submenu_mb li:first-child{
+		border-bottom: 1px solid #f0f0f0;
+	}
+	#submenu_mb li > a:hover{
+		background: var(--highlight);
+		color: #fff;
+	}
+
+	#submenu_mb li > a:visited{
+		color: #005abb;
+	}
+
+
+
 	/* bottom border divider*/
 	.bottom-border {
-	  width: 100%;
-	  height: 1px;
-	  background-color: #005abb45;
-	  clear: both;
+		width: 100%;
+		height: 1px;
+		background-color: #e2e2e2;
+		clear: both;
 	}
+
+	#service_m > div:nth-child(3) {
+
+	margin-bottom: -1px;
+}
 
 	.wrapper {
 		min-width: unset;
@@ -164,7 +201,7 @@
 
 	}
 	.iconbox {
-		width: 100% ;
+		width: 100% !important;
 		margin-top: 70px;
 		margin-bottom: 0;
 	}
@@ -234,14 +271,20 @@
 	}
 	.halfblock form {
 		width: 100% !important;
-		color: #fff;
+		color: var(--main-color);
 	}
 	.halfblock .button, .halfblock form .email {
 		width: 80%;
 	}
+	.halfblock form >textarea, .halfblock form input:not(.button) {
+		width: 100%;
+	}
+	.copyright{
+		bottom: 20px;
+	}
 
 	footer{
-		height: 250px;
+		height: 270px;
 	}
 	footer .logo {
 		width: 130px;
@@ -272,12 +315,8 @@ display: block;
 
 	/*ABOUT==============================*/
 	.about .hero {display: block;}
-	.about .hero .about_text {
-    color: #fff;
-    margin: auto 0;
-    width: 100%;
-    text-align: left;
-}
+
+
 .iconsection.dark .iconbox {
 	width: 50% !important;
 }
@@ -285,9 +324,10 @@ display: block;
 	font-weight: 600;
 	max-width: 150px;
 }
-.iconsection.dark .iconbox:nth-child(7) {
+.about .iconsection.dark .iconbox:nth-child(7) {
 	width: 100% !important;
 }
+
 .iconsection.leaders {
     text-align: center;
     padding: 70px 0px;
@@ -306,7 +346,7 @@ display: block;
     margin-bottom: 10px;
     padding: 0 15px;
 }
-.about .halfblock form {
+.about .halfblock form, .ppc .halfblock form {
 	margin: auto;
     width: 100%;
     text-align: center;
@@ -339,7 +379,46 @@ display: block;
 
 }
 
+/*PPC*/
 
+.ppc .hero .about_text, .about .hero .about_text {
+	color: #fff;
+	margin: auto 0;
+	width: 100%;
+	text-align: left;
+}
+.ppc .hero .wrapper {
+	display:block;
+height: unset}
+	.ppc .hero .about_text {
+		margin: unset;
+		height: unset;
+	}
+	.ppc .hero {
+		min-height: 100vh;
+		height: unset;
+
+	}
+	.ppc .partners .wrapper {
+
+		display: flex;
+		flex-direction: column;
+
+	}
+	.ppc .partner {
+		display: inline-block;
+		white-space: nowrap;
+		width: 100%;
+		padding: 70px 30px 180px;
+		margin: 30px 0px;
+		position: relative;
+	}
+	.audit .flex {
+		flex-direction: column;
+	}
+	.audit ul {
+		width: unset;
+	}
 /*CONTACT US*/
 
 .contact .hero {
@@ -365,11 +444,12 @@ display: block;
 }
 
 
-.contact .halfblock {
+.contact .halfblock, .ppc .halfblock {
     height: 100vh;
     background: linear-gradient( 0deg, #ffffffcc, #ffffffcc), url(../img/team.jpg) no-repeat;
     background-size: cover;
     background-position: right;
+	color: var(--main-color);
 }
 .contact .halfblock form {
 	color: var(--main-color);

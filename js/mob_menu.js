@@ -30,4 +30,17 @@ $(document).ready(function() {
       $defaults.closeButton.fadeOut();
     }
   });
+  let hidden = 1;
+  $('#service_m').on('click', function(){
+    if (hidden == 1)  {
+      $('#submenu_mb').slideDown(500);
+      hidden = 0;
+    } else {
+      $('#submenu_mb').slideUp(100);
+      hidden = 1
+    }
+
+  });
+
+
 });

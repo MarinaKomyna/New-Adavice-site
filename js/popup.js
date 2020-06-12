@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-		var popFired = false;
+
     	if ($('#popup')) {
 			var element_position = $('#popTrigger').offset().top;
 			var screen_height = $(window).height();
@@ -23,9 +23,11 @@ $( document ).ready(function() {
 				}
 			});
 function show_pop(){
-				if (popFired == false) {
+				if (localStorage.getItem('popFired')) {
+					return false;
+				}else{
 					$('#popup').fadeIn(900);
-					popFired = true;
+					localStorage.setItem('popFired', 1);
 				}
 			}
 			function close_pop() {
