@@ -23,11 +23,11 @@ $( document ).ready(function() {
 				}
 			});
 function show_pop(){
-				if (localStorage.getItem('popFired')) {
+				if (sessionStorage.getItem('popFired')) {
 					return false;
 				}else{
 					$('#popup').fadeIn(900);
-					localStorage.setItem('popFired', 1);
+					sessionStorage.setItem('popFired', '1');
 				}
 			}
 			function close_pop() {
