@@ -413,6 +413,7 @@ footer a:visited {
 	bottom: 50px;
 	left: 50%;
 	transform: translate(-50%, 0);
+	width: max-content;
 }
 [class*="mob"] {
     display: none !important;
