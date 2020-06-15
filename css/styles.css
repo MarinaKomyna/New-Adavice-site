@@ -1153,7 +1153,7 @@ body.contact > section:nth-child(5) {
 	min-height: 400px;
 	display: flex;
 	flex-direction: row;
-	padding: 30px 20px;
+	padding: 30px 20px 120px;
 }
 .ppc .partners h2 {
 	color: var(--main-color);
@@ -1216,6 +1216,12 @@ body.contact > section:nth-child(5) {
 .price_box span {
 	display: block;
 }
+.price_box .button {
+	position: absolute;
+	bottom: -70px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
 .price1, .price2 {
 	padding: 10px 0;
 	text-align: center;
@@ -1223,7 +1229,7 @@ body.contact > section:nth-child(5) {
 	font-weight: 600;
 }
 .price1 {
-	background: var(--highlight);
+	background: #0074be;
 }
 .price2 {
 	background: var(--main-color);
