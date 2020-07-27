@@ -113,7 +113,7 @@ header .wrapper {
 }
 .desk-menu li  {
 	position: relative;
-	font-weight: 900;
+	font-weight: 700;
 	cursor: pointer;
 	font-size: 23px;
 	display: inline-block;
@@ -282,6 +282,9 @@ h2.center.dark {
 	color: #fff;
 	margin: unset;
 	padding-top: 70px;
+}
+.careers h2.center.dark {
+	padding: 50px 0;
 }
 .iconsection .iconbox:nth-child(2) > img.connector {
 	top: unset;
@@ -1237,4 +1240,101 @@ body.contact > section:nth-child(5) {
 }
 .partner .numbers {
 	font-size: 24px;
+}
+
+/*
+Careers*/
+
+.careers .hero {
+	background: linear-gradient( 0deg, #ffffffe3, #ffffffe3), url(../img/digital.jpg) center no-repeat;
+	overflow: hidden;
+	height: 100vh;
+	display: flex;
+	background-size: cover;
+}
+
+.careers .hero h1 {
+	color: var(--main-color);
+}
+.careers .hero .wrapper {
+	display: flex;
+	height: 40vh;
+	min-height: 450px;
+	margin: auto;
+}
+.careers .hero .button {
+	margin-top: 30px;
+}
+.careers .hero h3 {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	color: var(--main-color);
+}
+.careers .hero .img {
+	display: inline-block;
+	position: absolute;
+	right: 0%;
+	width: 50%;
+	background: var(--main-color);
+	background-size: cover;
+	height: 450px;
+}
+.careers .hero img {
+	position: absolute;
+	left: 30px;
+	top: -30px;
+	height: 100%;
+}
+
+.careers.hero .about_text {
+	color: #fff;
+	margin: 0;
+	width: 50%;
+	text-align: left;
+	height: 50vh;
+}
+.careers .hero p {
+	color: var(--main-color);
+}
+.careers .hero .about_text {
+	color: #fff;
+	margin: 0;
+	width: 50%;
+	text-align: left;
+	height: 50vh;
+}
+.ad_box {
+
+	padding: 50px 0px;
+}
+.ad_box .wrapper {
+	max-width: 680px;
+}
+.ads li::marker {
+	color: var(--highlight);
+
+
+}
+.ad_box h3 {
+	margin-bottom: 20px;
+}
+.ad_box h4 {
+	margin-bottom: 5px;
+}
+.ad_box ul {
+	list-style-position: inside;
+	margin-bottom: 10px;
+
+}
+/*.ad_box li{*/
+/*	color: #0074be;*/
+/*	list-style: circle;*/
+/*	margin-left: 20px;*/
+/*}*/
+.ad_box .wrapper > * {
+	margin-bottom: 20px;
+}
+.ad_box:nth-child(even) {
+	color: #fff;
+	background: var(--main-color);
 }

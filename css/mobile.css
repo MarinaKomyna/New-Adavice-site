@@ -40,6 +40,7 @@
 	.menu-icon svg {
 		margin: auto;
 		width: 21px;
+		position: relative;
 	}
 
 	/* class for the ul*/
@@ -573,7 +574,6 @@ text-align: center;
 	background: linear-gradient( 0deg, #ffffffbf, #ffffffbf), url(../img/contact_hero.jpg) center no-repeat;
 }
 .halfblock.right {
-    height: 400px;
     background: #fff;
  
     color: var(--main-color);
@@ -590,5 +590,23 @@ text-align: center;
 #popup .content {
     width: 100%;
 }
+/*Careers*/
+	.careers .hero .about_text, .about .hero .about_text {
+		color: #fff;
+		margin: auto 0;
+		width: 100%;
+		text-align: left;
+	}
+	.careers  .hero .wrapper {
+		display:block;
+		height: unset}
+	.careers  .hero .about_text {
+		margin: unset;
+		height: unset;
+	}
+	.careers  .hero {
+		min-height: 100vh;
+		height: unset;
 
+	}
 }
