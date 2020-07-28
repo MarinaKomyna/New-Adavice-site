@@ -144,9 +144,12 @@ header .wrapper {
 	transition: 0.5s;
 	font-weight: 600;
 }
-.submenu li:hover{
-	border-bottom: 4px solid var(--highlight);
+.submenu li:hover {
+
 	color: #005abb;
+}
+.submenu li.active {
+	border-bottom: 4px solid var(--highlight);
 }
 /*.active_sub a {*/
 /*	color: var(--highlight)!important;*/
@@ -168,16 +171,17 @@ header .wrapper {
 	margin-right: 20px;
 }
 .desk-menu li:not(:last-child) {
-	margin-right: 20px;
+	margin-right: 4px;
 }
 .desk-menu a, .desk-menu a:visited {color: var(--main-color); transition: 0.5s color; }
 .desk-menu a:hover, .desk-menu li:hover {
 	color: #005abb;
+	text-decoration: none;
 }
 
 
 
-li.active:after {
+.desk-menu > li.active:after {
 	content: '';
     position: absolute;
     bottom: 0;
@@ -367,7 +371,7 @@ margin: 0px 0px 20px;
 	padding: 70px 20px;
 }
 footer {
-	background: var(--main-color);
+	background: #10345a;
 	color: #fff;
 	height: 190px;
 	padding: 50px 30px;
@@ -1309,6 +1313,11 @@ Careers*/
 }
 .ad_box .wrapper {
 	max-width: 680px;
+}
+.ad_box li {
+	margin-bottom: 10px;
+	list-style: disc;
+	margin-left: 20px;
 }
 .ads li::marker {
 	color: var(--highlight);
