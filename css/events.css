@@ -191,6 +191,23 @@
     -ms-grid-row: 1;
     -ms-grid-row-span: 62;
 }
+.new_event >div {
+    background: var(--main-color);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.new_event .button {
+    margin: 0;
+}
+.button:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.new_event >div>div {
+    margin: auto;
+    text-align: center;
+}
 .quarterly_galery > .q-item:nth-of-type(6n+2){
     grid-column-start: 32;
     grid-column-end: 70;
@@ -814,6 +831,7 @@
     .section_title {
         margin: 50px 25px;
     }
+
     .win_background__content{
         width: 100%;
     }
