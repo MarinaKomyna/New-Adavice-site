@@ -26,6 +26,9 @@ body, p, h1, h2, h3, h4, span, ul {
 body, div, section, p, span, form, input, a, footer,header {
 	box-sizing: border-box;
 }
+p {
+	line-height: 1.5;
+}
 
 h1 {font-size:38px;
 	text-transform: uppercase;
@@ -1307,14 +1310,14 @@ Careers*/
 	text-align: left;
 	height: 50vh;
 }
-.ad_box {
+.position_box {
 
 	padding: 50px 0px;
 }
-.ad_box .wrapper {
+.position_box .wrapper {
 	max-width: 680px;
 }
-.ad_box li {
+.position_box li {
 	margin-bottom: 10px;
 	list-style: disc;
 	margin-left: 20px;
@@ -1324,26 +1327,26 @@ Careers*/
 
 
 }
-.ad_box h3 {
+.position_box h3 {
 	margin-bottom: 20px;
 }
-.ad_box h4 {
+.position_box h4 {
 	margin-bottom: 5px;
 }
-.ad_box ul {
+.position_box ul {
 	list-style-position: inside;
 	margin-bottom: 10px;
 
 }
-/*.ad_box li{*/
+/*.position_box li{*/
 /*	color: #0074be;*/
 /*	list-style: circle;*/
 /*	margin-left: 20px;*/
 /*}*/
-.ad_box .wrapper > * {
+.position_box .wrapper > * {
 	margin-bottom: 20px;
 }
-.ad_box:nth-child(even) {
+.position_box:nth-child(even) {
 	color: #fff;
 	background: var(--main-color);
 }
