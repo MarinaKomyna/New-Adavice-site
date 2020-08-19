@@ -464,6 +464,7 @@ footer a:visited {
 }
 
 .about .hero .about_text {
+	font-size: 16px;
 	color: #fff;
 	margin: auto 0;
     width: 50%;
