@@ -1,7 +1,34 @@
+/*DSP changes*/
+@media screen and (max-width: 1463px){
+	.dps .hero img{
+		height: auto;
+	}
+	.dps .hero .img{
+		height: 386px;
+	}
+}
+
+@media screen and (max-width: 1261px){
+		.dps .hero img{
+			display: none;
+		}
+		.dps .hero .img{
+			background: url(../img/laptop.jpg);
+			background-size: cover;
+		}
+}
+
 @media all and (max-width: 1280px) {
 	.desk-menu li  {
 	font-size: 14px;
 		height: 47px;
+	}
+	.submenu li{
+		height: auto;
+	}
+
+	footer .rightblock a{
+		font-size: 10px;
 	}
 }
 
@@ -174,7 +201,7 @@
 		padding-top: 16px;
 		padding-bottom: 16px;
 	}
-	#submenu_mb li:first-child{
+	#submenu_mb li{
 		border-bottom: 1px solid #f0f0f0;
 	}
 	#submenu_mb li > a:hover{
@@ -293,7 +320,7 @@
 	}
 
 	footer{
-		height: 340px;
+		height: 450px;
 	}
 	footer .logo {
 		width: 130px;
@@ -611,6 +638,7 @@ text-align: center;
 	.careers  .hero .wrapper {
 		display:block;
 		height: unset}
+
 	.careers  .hero .about_text {
 		margin: unset;
 		height: unset;
@@ -620,4 +648,85 @@ text-align: center;
 		height: unset;
 
 	}
+
+	/*DSP*/
+	.dps .hero .about_text, .about .hero .about_text {
+		color: #fff;
+		margin: auto 0;
+		width: 100%;
+		text-align: left;
+	}
+	.dps  .hero .wrapper {
+		display:block;
+		height: unset}
+		
+	.dps  .hero .about_text {
+		margin: unset;
+		height: unset;
+	}
+	.dps  .hero {
+		min-height: 100vh;
+		height: unset;
+	}
+	.dps .hero{
+		background: linear-gradient(0deg, #ffffffe3, #ffffffe3), url(../img/laptop.jpg) center no-repeat;
+		background-size: cover;
+	}
+	.dps .hero .wrapper{
+		min-height: 250px;
+	}
+	.dps .hero h1{
+		font-size: 28px;
+	}	
+	.dps .hero h2{
+		font-size: 22px;
+	}	
+	.dps .hero p{
+		font-size: 16px;
+	}	
+	.dps .hero li{
+		float: none;
+	}	
+	.dps .under_list{
+		margin-top: 30px;
+	}	
+	.visible_block{
+		padding-top: 20px;
+		display: table !important;
+		margin-right: auto;
+		margin-left: auto;
+	}	
+	.invisible_block{
+		display: none;
+	}	
+	.dps .halfblock{
+		background: linear-gradient(0deg, #003d71e8, #003d71e8), url(../img/target.jpg) no-repeat;
+		background-size: cover;
+		background-position: right;
+	}	
+	.dps .halfblock .wrapper{
+		height: 100%;
+	}
+	.dps .halfblock .about_text{
+		margin: auto;
+		width: auto;
+		text-align: left;
+		color: #fff;
+		padding-top: 35px;
+	}	
+	.dps .platformsection, .last_section {
+		flex-direction: column;
+	}	
+	.dps .platformsection{
+		padding-bottom: 50px;
+	}	
+	.dps .platformbox, .lastbox{
+		width: 100% !important;
+		margin-top: 70px;
+		margin-bottom: 0;
+	}	
+	.dps .text_block{
+		width: 80%;
+	}
+	.visible_link{display: block !important;}
 }
