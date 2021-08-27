@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,900&display=swap');
+
 :root{
 --main-color: #133f6f;
 --highlight: #f0ad1c;
@@ -840,7 +841,7 @@ body.contact > section:nth-child(5) {
 
 /*SUBMITTED*/
 .thx {
-	height: calc(100vh - 210px); 
+	height: calc(100vh - 190px); 
 	color: var(--main-color);
 	display: flex;
 	background: linear-gradient( 0deg, #ffffffbf, #ffffffbf), url(../img/contact_hero.jpg) center no-repeat;
@@ -1366,11 +1367,11 @@ DPS*/
 
 .dps .hero h1 {
 	color: var(--main-color);
-	font-size: 50px;
+	font-size: 55px;
 }
 .dps .hero .wrapper {
 	display: flex;
-	height: 42vh;
+	height: 35vh;
 	width: 100%;
 	margin: auto;
 }
@@ -1379,7 +1380,9 @@ DPS*/
 }
 .dps .hero h2{
 	text-transform: capitalize;
-	color: var(--main-color);}
+	color: var(--main-color);
+	font-size: 35px;
+}
 
 .dps .hero h3 {
 	margin-top: 30px;
@@ -1390,10 +1393,10 @@ DPS*/
 	display: inline-block;
 	position: absolute;
 	right: 0%;
-	width: 50%;
+	width: 45%;
 	background: var(--main-color);
 	background-size: cover;
-	height: 450px;
+	height: 386px;
 }
 .dps .hero img {
 	position: absolute;
@@ -1412,7 +1415,7 @@ DPS*/
 .dps .hero p {
 	color: var(--main-color);
 	margin-bottom: 30px;
-	font-size: 20px;
+	font-size: 30px;
 }
 .dps .hero .about_text {
 	color: #fff;
@@ -1420,7 +1423,6 @@ DPS*/
     width: 80%;
     text-align: left;
     height: 50vh;
-    margin-top: 65px;
 }
 
 .dps .hero ul{
@@ -1429,7 +1431,7 @@ DPS*/
 
 .dps .hero li{
 	float: left;
-	font-size: 15px;
+	font-size: 20px;
 	margin-left: 20px;
     padding-right: 20px;
 }
@@ -1439,8 +1441,8 @@ DPS*/
 }
 
 .dps .under_list{
-font-size: 15px !important;
-margin-top: 60px;
+font-size: 20px !important;
+margin-top: 90px;
 }
 
 .dps h2.center.dark {
@@ -1457,22 +1459,23 @@ margin-top: 60px;
 
 .dps .iconbox p {
     white-space: normal;
-    text-align: center;
+    text-align: left;
 }
 
 .dps .iconbox span{
 	color: var(--highlight);
 }
 
-.dps .iconbox ul{
-list-style-image: url('../img/star.png');
-}
-
 .dps .iconbox li{
 text-align: left;
 font-size: 14px;
 white-space: break-spaces;
-line-height: 2;
+line-height: 1.3;
+margin-bottom: 8px;
+background: url(../img/star.png) no-repeat left top;
+padding: 0px 0px 10px 25px;
+list-style: none;
+margin: 0;
 }
 
 .dps h3.center.dark {
@@ -1483,7 +1486,7 @@ line-height: 2;
 }
 
 .dps .with_list .iconbox{
-	padding: 0 60px;
+	padding: 0 45px;
 }
 
 .dps .button_block{
@@ -1577,7 +1580,7 @@ height: 50vh;
 }
 
 .dps .platformbox span{
-	color: var(--highlight);
+	color: #ed6e00;
 }
 
 .dps .green {
@@ -1600,8 +1603,109 @@ height: 50vh;
 	white-space: normal;
 }
 
+.dps .new_btn{
+	width: 280px;
+    height: 60px;
+	border-radius: 30px;
+	font-size: 23px;
+	padding: 12px 0;
+}
+
 .visible_block, .visible_link{display: none !important;}
 
 .new_right{
 	padding: 5px 0;
 }
+
+/*FOR NEW TERMS*/
+#new_wrapper{
+	margin-left: 30%;
+}
+
+.new_menu{
+	position: fixed;
+	font-size: 14px;
+	background-color: white !important;
+	box-shadow: 0 0 10px -5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	top: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-top: 120px;	
+	width: 25%;
+	height: 100%;
+	z-index: 1;
+}
+
+.new_menu_list, .new_submenu_list{
+	list-style: none;
+}
+
+.new_submenu_list{
+	padding-top: 15px;
+}
+
+.new_menu a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.new_menu li{
+	position: relative;
+}
+
+.new_submenu_list {
+    left: 0px;
+    cursor: pointer;
+    z-index: 40;
+    display: none;
+}
+
+.list_arrow_right_1, .list_arrow_right_2{
+	position: absolute;
+    height: 8px;
+    right: 0;
+    top: 5px;
+	display: block;
+}
+.list_arrow_down_1, .list_arrow_down_2{
+	display: none;
+	position: absolute;
+    height: 8px;
+    right: 0;
+    top: 5px;
+}
+
+.new_sub_menu{
+	background-color: #f6f7f9;
+    min-height: 64px;
+    padding: 15px;
+    position: fixed;
+    z-index: -1;
+    margin-top: 85px;
+	display: none;
+	width: 100%;
+	z-index: 2;
+	box-shadow: 0 0 10px -5px;
+}
+
+.new_sub_menu img{
+    width: 30px;
+    right: 27px;
+    top: 16px;
+    position: absolute;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+.new_terms h3{
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
