@@ -37,14 +37,13 @@ $(document).ready(function () {
             return false;
         }
     });
+    if ($(window).width() <= '1280') {
+        $('.link_list').click(function () {
+                $('.new_menu').slideUp(200);
+        });
 
-    $('.link_list').click(function () {
-        $('.new_menu').slideUp(200);
-        return false;
-    });
-
-    $('.new_submenu_list li').click(function () {
-        $('.new_menu').slideUp(200);
-        return false;
-    });
+        $('.new_submenu_list li').click(function () {
+                $('.new_menu').slideUp(200);
+        });
+    }
 });
