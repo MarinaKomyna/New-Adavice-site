@@ -1,10 +1,7 @@
 /*DSP changes*/
-@media screen and (max-width: 1463px){
-	.dps .hero img{
-		height: auto;
-	}
-	.dps .hero .img{
-		height: 386px;
+@media screen and (max-width: 1400px){
+	#new_wrapper{
+		margin-left: 25%;
 	}
 }
 
@@ -17,23 +14,23 @@
 			background-size: cover;
 		}
 		.dps .hero h1{
-			font-size: 50px;
+			font-size: 55px;
 		}
 
 		.dps .hero h2{
-			font-size: 28px;
+			font-size: 30px;
 		}
 
 		.dps .hero p{
-			font-size: 20px;
+			font-size: 25px;
 		}
 
 		.dps .hero li{
-			font-size: 14px;
+			font-size: 15px;
 		}
 
 		.dps .under_list{
-			font-size: 14px !important;
+			font-size: 15px !important;
 		}
 }
 
@@ -46,6 +43,12 @@
 		height: auto;
 	}
 
+	.new_footer footer{
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	footer .rightblock a{
 		font-size: 10px;
 	}
@@ -56,7 +59,7 @@
 
 	.new_menu{
 		display: none;
-		width: 100%;
+		width: 85%;
 		height: 100%;
 		padding-top: 200px;
     	padding-bottom: 20px;
@@ -731,7 +734,6 @@ text-align: center;
 		padding-top: 20px;
 		display: table !important;
 		margin-right: auto;
-		margin-left: auto;
 	}	
 	.invisible_block{
 		display: none;
@@ -768,7 +770,7 @@ text-align: center;
 	.visible_link{display: block !important;}
 	
 	.dps .iconbox p{
-		text-align: center;
+		text-align: left;
 	}
 
 	.dps .new_btn{
@@ -776,5 +778,10 @@ text-align: center;
 		height: 42px;
 		border-radius: 35px;
 		font-size: 16px;
+	}
+
+		
+	.new_footer footer .wrapper{
+		min-width: unset;
 	}
 }

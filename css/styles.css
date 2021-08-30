@@ -1361,7 +1361,7 @@ DPS*/
 .dps .hero {
 	background: #F0F0F0;
 	overflow: hidden;
-	height: 85vh;
+	height: 100vh;
 	display: flex;
 }
 
@@ -1371,7 +1371,7 @@ DPS*/
 }
 .dps .hero .wrapper {
 	display: flex;
-	height: 35vh;
+	height: 40vh;
 	width: 100%;
 	margin: auto;
 }
@@ -1393,7 +1393,7 @@ DPS*/
 	display: inline-block;
 	position: absolute;
 	right: 0%;
-	width: 45%;
+	width: 50%;
 	background: var(--main-color);
 	background-size: cover;
 	height: 386px;
@@ -1419,8 +1419,8 @@ DPS*/
 }
 .dps .hero .about_text {
 	color: #fff;
-	margin-left: 10%;
-    width: 80%;
+	margin: auto 0;
+    width: 50%;
     text-align: left;
     height: 50vh;
 }
@@ -1519,12 +1519,11 @@ margin: 0;
 }
 
 .dps .halfblock .about_text{
-color: var(--main-color);
-margin-left: 60%;
-padding-left: 30px;
-width: 50%;
-text-align: left;
-height: 50vh;
+	color: var(--main-color);
+    width: 50%;
+    text-align: left;
+    margin: auto 0;
+    margin-left: 60%;
 }
 
 .dps .halfblock .about_text li{
@@ -1538,7 +1537,7 @@ height: 50vh;
 }
 
 .dps .halfblock .wrapper{
-	height: 570px;
+	height: 400px;
 }
 
 .dps .platformsection, .last_section{
@@ -1628,8 +1627,9 @@ height: 50vh;
 .new_menu{
 	position: fixed;
 	font-size: 14px;
-	background-color: white !important;
-	box-shadow: 0 0 10px -5px;
+	background: linear-gradient( 
+		0deg
+		, #ffffffe3, #ffffffe3), url(../img/for_policy.jpg);;
 	padding-right: 20px;
 	padding-left: 20px;
 	top: 0;
@@ -1639,6 +1639,9 @@ height: 50vh;
 	width: 25%;
 	height: 100%;
 	z-index: 1;
+	color: var(--main-color);
+	font-weight: 800;
+	box-shadow: 0 0 10px -5px;
 }
 
 .new_menu_list, .new_submenu_list{
@@ -1712,3 +1715,16 @@ a.anchor {
 	font-size: 20px;
 }
 
+.new_footer footer{
+	width: 75%;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.new_footer footer .wrapper{
+	min-width: 920px;
+}
+
+.new_menu ul{
+	padding-left: 10px;
+}
