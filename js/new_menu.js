@@ -59,10 +59,10 @@ $(document).ready(function () {
 });
 
 $(window).resize(function () {
-    if ($(window).width() <= 1280) {
+    if ($(window).width() < 1281) {
         $('.new_menu').css("display", "none");
     }
-    if ($(window).width() > 1280) {
+    if ($(window).width() >= 1281) {
         $('.new_menu').css("display", "block");
     }
 });
