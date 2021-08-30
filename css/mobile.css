@@ -751,7 +751,7 @@ text-align: center;
 		width: auto;
 		text-align: left;
 		color: #fff;
-		padding-top: 35px;
+		padding-left: 15px;
 	}	
 	.dps .platformsection, .last_section {
 		flex-direction: column;
@@ -779,9 +779,18 @@ text-align: center;
 		border-radius: 35px;
 		font-size: 16px;
 	}
-
+	
+	.dps h2.center, h2{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 		
 	.new_footer footer .wrapper{
 		min-width: unset;
+	}
+
+	.lastbox h2{
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
