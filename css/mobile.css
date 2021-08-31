@@ -36,37 +36,34 @@
 
 @media all and (max-width: 1280px) {
 	.desk-menu li  {
-	font-size: 14px;
+		font-size: 14px;
 		height: 47px;
 	}
 	.submenu li{
 		height: auto;
 	}
 
+	footer .rightblock a{
+		font-size: 10px;
+	}
+		
 	.new_footer footer{
 		width: auto;
 		margin-left: 0;
 		margin-right: 0;
 	}
 
-	footer .rightblock a{
-		font-size: 10px;
-	}
-
 	.new_sub_menu{
 		display: block !important;
 	}
-
 	.new_menu{
 		display: none;
-
 		height: 100%;
 		padding-top: 200px;
-    	padding-bottom: 20px;
+		padding-bottom: 20px;
 		position: fixed;
 		z-index: 1;
 	}
-
 	#new_wrapper{
 		margin-left: auto;
 	}
@@ -778,6 +775,7 @@ text-align: center;
 		height: 42px;
 		border-radius: 35px;
 		font-size: 16px;
+		padding: 10px 0;
 	}
 	
 	.dps h2.center, h2{
