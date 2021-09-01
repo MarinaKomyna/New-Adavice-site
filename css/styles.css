@@ -1787,18 +1787,17 @@ a.anchor {
 
 .sign_up form{
 	margin: auto;
-    width: 50%;
+    width: auto;
     text-align: center;
 }
 
-.sign_up form >textarea, .sign_up form input:not(.button), .sign_up form select{
+.sign_up textarea, .sign_up form input:not(.button), .sign_up form select{
 	text-align: center;
     width: 350px;
     height: 42px;
     border-radius: 250px;
     border: 2px solid var(--main-color);
     padding: 10px 20px;
-    margin-bottom: 15px;
     text-align: left;
 	float: right;
 }
@@ -1807,10 +1806,10 @@ a.anchor {
 	background: #00B553;
     box-shadow: 0 15px 20px -4px #00b553;
 	width: 350px;
-	
+	margin-right: 0;
 }
 
-.sign_up form >textarea {
+.sign_up textarea {
     resize: none;
     box-sizing: border-box;
     border-radius: 20px;
@@ -1825,9 +1824,18 @@ a.anchor {
     padding: 50px;
 }
 
+.sign_up .input_field{
+display: flex;
+margin-bottom: 15px;
+}
+
 .sign_up label{
-	color: #fff;
-	padding-right: 10px;
-	float: left;
+	color: var(--highlight);
+	padding-right: 20px;
+	display: block;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+	font-weight: 600;
 }
 

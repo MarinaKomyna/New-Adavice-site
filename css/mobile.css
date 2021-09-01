@@ -804,7 +804,7 @@ text-align: center;
 
 	.sign_up .hero{
 		height: fit-content;
-		padding: 155px 0 155px;
+		padding: 155px 0 80px;
 	}
 
 	.sign_up .hero > .main-title{
@@ -826,7 +826,27 @@ text-align: center;
 		width: 100%;
 	}
 
-	.sign_up form >textarea, .sign_up form input:not(.button), .sign_up form select, .sign_up input.button{
+	.sign_up textarea, .sign_up form input:not(.button), .sign_up form select, .sign_up input.button{
 		width: 80vw;
+	}
+
+	.sign_up .input_field{
+		flex-direction: column;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+
+	.sign_up label{
+		margin-left: 0;
+		margin-right: auto;
+		padding-bottom: 10px;
+	}
+
+	.sign_up input.button{
+		margin-right: auto;
+	}
+
+	.sign_up .hero .wrapper{
+		height: fit-content;
 	}
 }
