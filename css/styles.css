@@ -1376,7 +1376,9 @@ DPS*/
 	margin: auto;
 }
 .dps .hero .button {
-	margin-top: 30px;
+	margin-top: 90px;
+    margin-left: 0;
+	width: 370px;
 }
 .dps .hero h2{
 	text-transform: capitalize;
@@ -1414,7 +1416,8 @@ DPS*/
 }
 .dps .hero p {
 	color: var(--main-color);
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 	font-size: 30px;
 }
 .dps .hero .about_text {
@@ -1613,6 +1616,16 @@ margin: 0;
 	padding: 12px 0;
 }
 
+.dps p.icon_title{
+	width: 100%;
+	background: var(--main-color);
+	font-size: 20px;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
 .visible_block, .visible_link{display: none !important;}
 
 .new_right{
@@ -1787,6 +1800,7 @@ a.anchor {
     padding: 10px 20px;
     margin-bottom: 15px;
     text-align: left;
+	float: right;
 }
 
 .sign_up input.button{
@@ -1811,4 +1825,9 @@ a.anchor {
     padding: 50px;
 }
 
+.sign_up label{
+	color: #fff;
+	padding-right: 10px;
+	float: left;
+}
 

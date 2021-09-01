@@ -788,6 +788,11 @@ text-align: center;
 		padding-right: 0;
 	}
 
+	.dps .hero .button{
+		width: 250px;
+		margin-top: 30px;
+	}
+
 	.new_footer footer .wrapper{
 		min-width: unset;
 	}
