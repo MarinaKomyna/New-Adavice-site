@@ -1782,11 +1782,11 @@ a.anchor {
 	height: 82vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .sign_up form{
-	margin: auto;
+	margin: 0;
     width: auto;
     text-align: center;
 }
