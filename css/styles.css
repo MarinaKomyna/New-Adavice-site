@@ -1732,3 +1732,83 @@ a.anchor {
 .new_terms .orange_text i{
 	color: #ffae00;
 }
+
+.sign_up .hero {
+    background: linear-gradient( 
+		0deg
+		, #003d71e8, #003d71e8), url(../img/contact_hero.jpg);
+}
+
+.sign_up .hero > .main-title {
+    text-align: center;
+    margin-top: 85px;
+    height: 18vh;
+    width: 100%;
+    padding: 30px 0;
+    display: block;
+    background-color: #fff;
+}
+
+.main-title h1{
+    color: var(--main-color) !important;
+
+}
+
+.main-title div{
+	width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+.main-title p{
+	text-align: right;
+    color: #939191;
+}
+
+.sign_up .hero .wrapper{
+	height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign_up form{
+	margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.sign_up form >textarea, .sign_up form input:not(.button), .sign_up form select{
+	text-align: center;
+    width: 350px;
+    height: 42px;
+    border-radius: 250px;
+    border: 2px solid var(--main-color);
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.sign_up input.button{
+	background: #00B553;
+    box-shadow: 0 15px 20px -4px #00b553;
+	width: 350px;
+	
+}
+
+.sign_up form >textarea {
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.sign_up .footer_text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 50px;
+}
+
+

@@ -796,4 +796,32 @@ text-align: center;
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+
+	.sign_up .hero{
+		height: fit-content;
+		padding: 155px 0 155px;
+	}
+
+	.sign_up .hero > .main-title{
+		background: none;
+		margin-top: 0;
+		padding: 20px;
+		height: fit-content;
+	}
+
+	.main-title h1, .main-title p{
+		color: #fff !important;
+	}
+
+	.main-title p{
+		text-align: center;
+	}
+
+	.sign_up form{
+		width: 100%;
+	}
+
+	.sign_up form >textarea, .sign_up form input:not(.button), .sign_up form select, .sign_up input.button{
+		width: 80vw;
+	}
 }
