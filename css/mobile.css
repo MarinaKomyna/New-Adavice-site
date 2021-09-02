@@ -784,7 +784,7 @@ text-align: center;
 		padding: 10px 0;
 	}
 	
-	.dps h2.center, h2{
+	.dps h2.center, .dps .button_block h2{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -854,5 +854,9 @@ text-align: center;
 
 	.sign_up .hero .wrapper{
 		height: fit-content;
+	}
+
+	.main .halfblock h2{
+		color: #fff !important;
 	}
 }
