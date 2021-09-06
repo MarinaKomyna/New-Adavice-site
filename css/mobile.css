@@ -859,4 +859,12 @@ text-align: center;
 	.main .halfblock h2{
 		color: #fff !important;
 	}
+
+	.dps .iconbox:nth-child(4) {
+		margin-bottom: 0px;
+	}
+
+	.dps #updated_title{
+		margin: 50px;
+	}
 }

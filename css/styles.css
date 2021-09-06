@@ -1595,7 +1595,7 @@ margin: 0;
 .dps .last{
 	text-transform: inherit;
 	padding-bottom: 70px;
-	font-weight: normal;
+	font-weight: 600;
 	font-size: 28px;
 }
 
@@ -1854,4 +1854,15 @@ margin-bottom: 15px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+
+.dps .star_list{
+	display: flex;
+    flex-wrap: nowrap;
+}
+
+.dps .star_list img{
+	height: 100%;
+    padding-top: 8px;
+    padding-right: 8px;
 }
