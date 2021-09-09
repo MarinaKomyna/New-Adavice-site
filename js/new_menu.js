@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('.link_list_1').click(function () {
         var id = $(this).attr('href'),
             top = $(id).offset().top;
@@ -51,6 +50,7 @@ $(document).ready(function () {
             $('.new_menu').slideDown(200);
             return false;
         }
+
         if ($('.new_menu').css("display") == "block") {
             $('.new_menu').slideUp(200);
             return false;
@@ -58,11 +58,9 @@ $(document).ready(function () {
     });
 });
 
-$(window).resize(function () {
-    if ($(window).width() < 1281) {
-        $('.new_menu').css("display", "none");
-    }
-    if ($(window).width() >= 1281) {
-        $('.new_menu').css("display", "block");
-    }
-});
+
+
+
+
+
+
