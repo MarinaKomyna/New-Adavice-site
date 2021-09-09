@@ -54,24 +54,35 @@
 	}
 		
 	.new_footer footer{
-		width: auto;
-		margin-left: 0;
-		margin-right: 0;
+		width: calc(100% - 250px);
 	}
 
-	.new_sub_menu{
-		display: block !important;
-	}
 	.new_menu{
-		display: none;
-		height: 100%;
-		padding-top: 200px;
-		padding-bottom: 20px;
-		position: fixed;
-		z-index: 1;
+		width: 250px;
 	}
+
 	#new_wrapper{
-		margin-left: auto;
+		margin-left: 25%;
+		min-width: 600px;
+		max-width: 900px;
+	}
+
+	.new_footer footer .wrapper{
+		min-width: 700px;
+	}
+}
+
+@media all and (max-width: 1050px) and (min-width: 981px) {
+	#new_wrapper{
+		margin-left: 20%;
+	}
+
+	.new_menu {
+		width: 180px;
+	}
+
+	.new_footer footer {
+		width: calc(100% - 180px);
 	}
 }
 
@@ -696,8 +707,9 @@ text-align: center;
 	.dps .hero .about_text, .about .hero .about_text {
 		color: #fff;
 		margin: auto 0;
-		width: 100%;
-		text-align: left;
+		margin-right: auto !important;
+		margin-left: auto !important;
+		width: fit-content;
 	}
 	.dps  .hero .wrapper {
 		display:block;
@@ -751,7 +763,7 @@ text-align: center;
 	}
 	.dps .halfblock .about_text{
 		margin: auto;
-		width: auto;
+		width: 450px;
 		text-align: left;
 		color: #fff;
 		padding-left: 25px;
@@ -761,14 +773,18 @@ text-align: center;
 	}	
 	.dps .platformsection{
 		padding-bottom: 50px;
+		padding-top: 50px;
 	}	
 	.dps .platformbox, .lastbox{
 		width: 100% !important;
 		margin-top: 70px;
 		margin-bottom: 0;
 	}	
+	.dps .platformbox, .lastbox:first-child{
+		margin-top: 10px;
+	}	
 	.dps .text_block{
-		width: 80%;
+		width: 450px;
 	}
 	.visible_link{display: block !important;}
 	
@@ -865,6 +881,74 @@ text-align: center;
 	}
 
 	.dps #updated_title{
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.new_sub_menu{
+		display: block;
+	}
+
+	.new_footer footer {
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.new_menu {
+		display: none;
+		height: 100%;
+		padding-top: 200px;
+		padding-bottom: 20px;
+		position: fixed;
+		z-index: 1;
+		width: 320px;
+	}
+
+	#new_wrapper {
+		margin-left: auto;
+		min-width: unset;
+	}
+
+	.dps .iconsection .iconbox{
+		width: 450px !important;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+}
+
+@media screen and (max-width: 660px){
+	.dps #updated_title{
 		margin: 50px;
+	}
+}
+
+@media screen and (max-width: 501px){
+	.dps .iconsection .iconbox{
+		width: 100% !important;
+	}
+
+	.dps .text_block{
+		width: 100%;
+	}
+
+	.dps .platformbox, .lastbox{
+		padding-left: 0px;
+	}
+
+	.dps .hero .about_text{
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+
+	.dps .halfblock .about_text{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1200px) and (min-width:981px){
+	.dps .text_block{
+		width: 250px;
 	}
 }
