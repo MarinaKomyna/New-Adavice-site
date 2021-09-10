@@ -1,7 +1,9 @@
 /*DSP changes*/
 @media screen and (max-width: 1400px){
 	#new_wrapper{
-		margin-left: 25%;
+		margin-left: 28%;
+		min-width: 600px;
+		max-width: 900px;
 	}
 }
 
@@ -62,9 +64,9 @@
 	}
 
 	#new_wrapper{
-		margin-left: 25%;
-		min-width: 600px;
-		max-width: 900px;
+		margin-left: 29%;
+		min-width: 500px;
+		max-width: 750px;
 	}
 
 	.new_footer footer .wrapper{
@@ -74,7 +76,9 @@
 
 @media all and (max-width: 1050px) and (min-width: 981px) {
 	#new_wrapper{
-		margin-left: 20%;
+		margin-left: 25%;
+		min-width: 400px;
+    	max-width: 700px;
 	}
 
 	.new_menu {
