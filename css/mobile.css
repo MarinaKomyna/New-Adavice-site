@@ -11,6 +11,10 @@
 	.sign_up .hero .wrapper{
 		justify-content: space-around;
 	}
+
+	.dps .new_btn{
+		width: 260px;
+	}
 }
 
 @media screen and (max-width: 1261px){
@@ -735,14 +739,17 @@ text-align: center;
 		min-height: 250px;
 	}
 	.dps .hero h1{
-		font-size: 28px;
+		font-size: 55px;
 	}	
 	.dps .hero h2{
-		font-size: 22px;
+		font-size: 36px;
 	}	
 	.dps .hero p{
-		font-size: 16px;
+		font-size: 25px;
 	}	
+	.dps .hero li {
+		font-size: 20px;
+	}
 	.dps .hero li{
 		float: none;
 	}	
@@ -798,9 +805,9 @@ text-align: center;
 
 	.dps .new_btn{
 		width: 250px;
-		height: 42px;
+		height: 50px;
 		border-radius: 35px;
-		font-size: 16px;
+		font-size: 20px;
 		padding: 10px 0;
 	}
 	
@@ -920,11 +927,44 @@ text-align: center;
 		margin-left: auto;
 		margin-right: auto;	
 	}
+
+	.dps .iconsection .iconbox span, .dps .iconsection .iconbox p, .dps .iconsection .iconbox li{
+		font-size: 20px;
+	}
+
+	.dps .platformbox h3#for_mobile{
+		padding-top: 20px;
+	}
 }
 
 @media screen and (max-width: 660px){
 	.dps #updated_title{
 		margin: 50px;
+	}
+
+	.dps .iconsection .iconbox span, .dps .iconsection .iconbox p, .dps .iconsection .iconbox li{
+		font-size: 16px;
+	}
+
+	.dps .hero h1 {
+		font-size: 28px;
+	}
+
+	.dps .hero h2 {
+		font-size: 22px;
+	}
+
+	.dps .hero p {
+		font-size: 16px;
+	}
+
+	.dps .new_btn {
+		height: 42px;
+		font-size: 16px;
+	}
+
+	.dps .hero li {
+		font-size: 15px;
 	}
 }
 
