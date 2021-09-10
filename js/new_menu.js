@@ -58,6 +58,15 @@ $(document).ready(function () {
     });
 });
 
+$(window).resize(function () {
+    if ($(window).width() <= 980) {
+        $('.new_menu').css("display", "none");
+    }
+    if ($(window).width() > 980) {
+        $('.new_menu').css("display", "block");
+    }
+    console.log($(window).width());
+});
 
 
 
