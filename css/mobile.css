@@ -932,6 +932,9 @@ text-align: center;
 		font-size: 20px;
 	}
 
+	.dps .platformbox h3#for_mobile{
+		padding-top: 30px;
+	}
 }
 
 @media screen and (max-width: 660px){

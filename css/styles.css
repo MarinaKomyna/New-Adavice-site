@@ -1572,6 +1572,7 @@ margin: 0;
 .dps .platformbox h3{
 	padding-bottom: 40px;
 	color: #fff;
+	font-size: 25px;
 }
 
 .dps .lastbox h2{
@@ -1580,7 +1581,7 @@ margin: 0;
 
 .dps .platformbox p{
 	line-height: 2;
-	font-size: 18px;
+	font-size: 20px;
 	padding-bottom: 20px;
 }
 
@@ -1863,6 +1864,6 @@ margin-bottom: 15px;
 
 .dps .star_list img{
 	height: 100%;
-    padding-top: 8px;
+    padding-top: 11px;
     padding-right: 8px;
 }
