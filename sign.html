@@ -479,10 +479,10 @@
 			};
 			$('#form_sign').prop('disabled', true);
 			window.dataLayer = window.dataLayer || [];
-			window.dataLayer.push({ 'event': 'send_form_talk_to_us' });
+			window.dataLayer.push({ 'event': 'send_form_sign_up' });
 			$.ajax({
 				type: 'POST',
-				url: '/c/contact_form',
+				url: '/c/signup_form',
 				data: formData,
 				encode: true,
 				success: function (data) {
